@@ -8,3 +8,11 @@
 `mv Aaron-Vimrc ~/.vim`
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
+
+Initialize bundle submodule:
+
+```
+$ git submodule init
+
+$ git submodule update
+```
