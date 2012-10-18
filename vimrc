@@ -16,3 +16,5 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+"NERDTree
+map <C-o>   :NERDTreeToggle<CR>
