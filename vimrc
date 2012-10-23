@@ -18,3 +18,4 @@ set softtabstop=4
 
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
+imap jj <Esc>
