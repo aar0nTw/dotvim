@@ -2,8 +2,8 @@ call pathogen#infect()
 filetype plugin indent on
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=1
 let g:Powerline_symbols = 'fancy'
 colorscheme solarized
 set number
@@ -18,4 +18,17 @@ set softtabstop=4
 
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
-imap jj <Esc>
+
+"TagBar 
+nnoremap <C-l>  :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
+"SwitchTab
+imap jj <ESC>
+nnoremap <silent> <C-t> :tabe<Space>
+
+" hit enter to cancel searched highlight
+noremap <CR> :nohlsearch<CR>
+
+" select ALL
+map <C-A> ggVG
