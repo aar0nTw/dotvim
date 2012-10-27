@@ -25,7 +25,7 @@ let g:tagbar_autofocus = 1
 
 "SwitchTab
 imap jj <ESC>
-nnoremap <silent> <C-t> :tabe<Space>
+noremap TT :tabe<Space>
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
