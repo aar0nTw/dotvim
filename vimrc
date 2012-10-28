@@ -16,6 +16,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+"Tabe open
+noremap TT :tabe<Space>
+
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
 
@@ -25,10 +28,11 @@ let g:tagbar_autofocus = 1
 
 "SwitchTab
 imap jj <ESC>
-noremap TT :tabe<Space>
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
 
 " select ALL
 map <C-A> ggVG
+
+let mapleader = ","
