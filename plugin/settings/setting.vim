@@ -16,7 +16,6 @@ set ignorecase
 set ruler
 set cursorline
 
-set encoding=utf-8
 
 map <Leader><Leader> <Leader>c<space>
 
