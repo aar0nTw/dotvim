@@ -1,6 +1,8 @@
 set encoding=utf-8
 call pathogen#infect()
-filetype plugin indent on
+filetype on
+filetype indent on
+filetype plugin on
 syntax enable
 set background=dark
 "let g:solarized_termcolors=256

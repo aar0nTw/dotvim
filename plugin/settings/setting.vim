@@ -21,3 +21,15 @@ map <Leader><Leader> <Leader>c<space>
 
 nmap <leader>v :tabe $MYVIMRC<CR>
 
+
+" ignores
+set wildignore+=*.o,*.obj,*.pyc                " output objects
+set wildignore+=*.png,*.jpg,*.gif,*.ico        " image format
+set wildignore+=*.swf,*.fla                    " image format
+set wildignore+=*.mp3,*.mp4,*.avi,*.mkv        " media format
+set wildignore+=*.git*,*.hg*,*.svn*            " version control system
+set wildignore+=*sass-cache*
+set wildignore+=*.DS_Store
+set wildignore+=log/**
+set wildignore+=tmp/**
+
