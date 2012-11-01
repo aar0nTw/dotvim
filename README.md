@@ -18,3 +18,6 @@ $ git submodule init
 
 $ git submodule update
 ```
+
+### If your git commit was error, please set your git default editor
+`git config --global core.editor /usr/bin/vim`
