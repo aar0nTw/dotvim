@@ -40,3 +40,7 @@ noremap <CR> :nohlsearch<CR>
 map <C-A> ggVG
 
 let mapleader = ","
+
+" coffee indent fold
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab

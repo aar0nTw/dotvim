@@ -40,3 +40,6 @@
 [submodule "bundle/colorselector"]
 	path = bundle/colorselector
 	url = git://github.com/c9s/colorselector.vim.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
