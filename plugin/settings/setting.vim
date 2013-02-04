@@ -15,6 +15,7 @@ set laststatus=2
 set ignorecase 
 set ruler
 set cursorline
+set cursorcolumn
 
 
 map <Leader><Leader> <Leader>c<space>
