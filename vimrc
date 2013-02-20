@@ -19,6 +19,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoread
+let g:SuperTabDefaultCompletionType="context"
 "Tabe open
 noremap TT :tabe<Space>
 
@@ -32,6 +33,8 @@ let g:tagbar_autofocus = 1
 "SwitchTab
 imap jj <ESC>
 imap kk <ESC> 
+
+setlocal omnifunc=syntaxcomplete#Complete
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
@@ -61,3 +64,6 @@ if executable('coffeetags')
         \ }
         \ }
 endif
+
+let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
+let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
