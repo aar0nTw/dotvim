@@ -38,6 +38,7 @@ setlocal omnifunc=syntaxcomplete#Complete
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
+noremap <F2> :CoffeeLint<CR>
 
 " select ALL
 map <C-A> ggVG
