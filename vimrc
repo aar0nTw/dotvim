@@ -8,7 +8,7 @@ set background=dark
 "let g:solarized_termcolors=256
 "let g:solarized_termtrans=1
 let g:Powerline_symbols = 'fancy'
-colorscheme solarized
+colorscheme wombat256
 set number
 set cindent
 set smartindent
