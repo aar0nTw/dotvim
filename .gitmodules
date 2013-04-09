@@ -49,3 +49,6 @@
 [submodule "bundle/javascript-libraries-syntax"]
 	path = bundle/javascript-libraries-syntax
 	url = https://github.com/othree/javascript-libraries-syntax.vim
+[submodule "bundle/dash.vim"]
+	path = bundle/dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
