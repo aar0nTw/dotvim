@@ -1,3 +1,14 @@
+" coffee indent fold
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+
+" Javascript indent
+au BufNewFile,BufReadPost *.js setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+au BufNewFile,BufReadPost *.json setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+
+"SCSS
+au BufRead,BufNewFile *.scss set filetype=css 
+
 set encoding=utf-8
 call pathogen#infect()
 filetype on
@@ -45,9 +56,26 @@ map <C-A> ggVG
 
 let mapleader = ","
 
-" coffee indent fold
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+let g:tagbar_type_css = {
+    \ 'ctagstype' : 'css',
+    \ 'kinds'     : [
+    \ 'c:classes',
+    \ 's:selectors',
+    \ 'i:identities'
+    \ ],
+    \ }
+
+let g:tagbar_type_scss = {
+    \ 'ctagstype' : 'scss',
+    \ 'kinds'     : [
+    \ 'c:classes',
+    \ 's:selectors',
+    \ 'i:identities'
+    \ ],
+    \ }
+
+
+
 
 highlight Normal ctermbg=none
 if executable('coffeetags')

@@ -8,10 +8,7 @@ set cindent
 set smartindent
 set autoindent
 set laststatus=2
-"set expandtab
-"set softtabstop=2
-"set tabstop=2
-"set shiftwidth=2
+set expandtab
 set ignorecase 
 set ruler
 set cursorline
