@@ -1,14 +1,3 @@
-" coffee indent fold
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
-
-" Javascript indent
-au BufNewFile,BufReadPost *.js setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
-au BufNewFile,BufReadPost *.json setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
-
-"SCSS
-au BufRead,BufNewFile *.scss set filetype=css 
-
 set encoding=utf-8
 call pathogen#infect()
 filetype on
@@ -36,6 +25,17 @@ noremap TT :tabe<Space>
 
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
+
+" coffee indent fold
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+
+" Javascript indent
+au BufNewFile,BufReadPost *.js setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+au BufNewFile,BufReadPost *.json setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+
+"SCSS
+au BufRead,BufNewFile *.scss set filetype=css 
 
 "TagBar 
 nnoremap <C-l>  :TagbarToggle<CR>
