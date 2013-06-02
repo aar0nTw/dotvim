@@ -70,6 +70,7 @@ let g:tagbar_type_scss = {
     \ 'kinds'     : [
     \ 'c:classes',
     \ 's:selectors',
+    \ 'm:mixing',
     \ 'i:identities'
     \ ],
     \ }

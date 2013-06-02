@@ -55,3 +55,6 @@
 [submodule "bundle/funcoo"]
 	path = bundle/funcoo
 	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "bundle/rails.vim"]
+	path = bundle/rails.vim
+	url = git://github.com/tpope/vim-rails.git
