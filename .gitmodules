@@ -58,3 +58,6 @@
 [submodule "bundle/Auto-Pairs"]
 	path = bundle/Auto-Pairs
 	url = https://github.com/vim-scripts/Auto-Pairs
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = git://github.com/slim-template/vim-slim.git
