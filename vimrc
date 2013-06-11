@@ -4,11 +4,12 @@ filetype on
 filetype indent on
 filetype plugin on
 syntax enable
-set background=dark
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+set t_Co=256
 let g:Powerline_symbols = 'fancy'
 colorscheme solarized
+set background=dark
 set number
 set cindent
 set smartindent
@@ -24,6 +25,12 @@ set pastetoggle=<F9>
 let g:SuperTabDefaultCompletionType="context"
 "Tabe open
 noremap TT :tabe<Space>
+
+" Setting Highlight cursor
+hi cursorcolumn   ctermbg=black
+hi CursorLine     cterm=underline ctermbg=black
+hi LineNr         ctermbg=black
+hi Normal ctermbg=none
 
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
@@ -85,10 +92,6 @@ let g:tagbar_type_scss = {
     \ ],
     \ }
 
-
-
-
-highlight Normal ctermbg=none
 if executable('coffeetags')
   let g:tagbar_type_coffee = {
         \ 'ctagsbin' : 'coffeetags',
@@ -107,3 +110,4 @@ endif
 
 let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
+noremap <Leader>c :set cursorline! cursorcolumn!<CR>

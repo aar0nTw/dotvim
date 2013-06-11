@@ -14,7 +14,6 @@ set ruler
 set cursorline
 set cursorcolumn
 
-
 map <Leader><Leader> <Leader>c<space>
 
 nmap <leader>v :tabe $MYVIMRC<CR>
