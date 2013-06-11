@@ -61,6 +61,6 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = git://github.com/slim-template/vim-slim.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = git://github.com/honza/vim-snippets.git
