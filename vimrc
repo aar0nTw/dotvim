@@ -13,6 +13,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:Powerline_symbols = 'fancy'
 let g:SuperTabDefaultCompletionType="context"
+let g:ctrlp_regexp = 1
 
 set background=dark
 set autoread
