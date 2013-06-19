@@ -46,7 +46,7 @@ map <C-o>   :NERDTreeToggle<CR>
 " Setting Highlight cursor
 hi cursorcolumn   ctermbg=black
 hi CursorLine     cterm=underline ctermbg=black
-hi LineNr         ctermbg=black
+hi LineNr         ctermbg=23 ctermfg=73
 hi Normal ctermbg=none
 
 
