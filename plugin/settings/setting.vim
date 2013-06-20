@@ -43,11 +43,14 @@ noremap TT :tabe<Space>
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
 
-" Setting Highlight cursor
+" Setting Highlight color
 hi cursorcolumn   ctermbg=black
 hi CursorLine     cterm=underline ctermbg=black
 hi LineNr         ctermbg=23 ctermfg=73
 hi Normal ctermbg=none
+hi TabLineSel ctermfg=white ctermbg=67
+hi TabLine ctermfg=11 ctermbg=darkblue
+hi TabLineFill ctermfg=darkblue
 
 
 " coffee indent fold
