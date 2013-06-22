@@ -48,8 +48,8 @@ hi cursorcolumn   ctermbg=black
 hi CursorLine     cterm=underline ctermbg=black
 hi LineNr         ctermbg=23 ctermfg=73
 hi Normal ctermbg=none
-hi TabLineSel ctermfg=white ctermbg=67
-hi TabLine ctermfg=11 ctermbg=darkblue
+hi TabLineSel ctermfg=white ctermbg=52
+hi TabLine ctermfg=white ctermbg=darkblue
 hi TabLineFill ctermfg=darkblue
 
 
