@@ -25,6 +25,8 @@ map <Leader><Leader> <Leader>c<space>
 
 nmap <leader>v :tabe $MYVIMRC<CR>
 
+" disable splashscreen
+set shortmess+=I
 
 " ignores
 set wildignore+=*.o,*.obj,*.pyc                " output objects
