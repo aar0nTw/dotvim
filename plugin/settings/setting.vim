@@ -5,6 +5,8 @@ set title
 set nobackup        " no backup file
 set noswapfile      " no swap file
 
+set list listchars=tab:»·,trail:·
+
 set number
 set cindent
 set smartindent
@@ -20,6 +22,8 @@ set cursorline
 set cursorcolumn
 set nowrap
 set pastetoggle=<F9>
+set hlsearch
+set incsearch
 
 map <Leader><Leader> <Leader>c<space>
 
