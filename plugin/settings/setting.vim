@@ -75,9 +75,11 @@ au BufNewFile,BufReadPost *.css setl shiftwidth=2 expandtab softtabstop=2 tabsto
 au BufNewFile,BufReadPost *.scss setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 au BufNewFile,BufReadPost *.styl setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
-au BufRead,BufNewFile *.scss set filetype=css 
 au BufRead,BufNewFile *.sass set filetype=css 
 au BufRead,BufNewFile *.styl set filetype=css 
+au BufRead,BufNewFile *.scss set filetype=scss
+
+au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass
 au BufNewFile,BufRead *.styl set syntax=sass
 

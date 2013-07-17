@@ -76,3 +76,9 @@
 [submodule "bundle/vim-multiedit"]
 	path = bundle/vim-multiedit
 	url = git://github.com/hlissner/vim-multiedit.git
+[submodule "bundle/vim-startify"]
+	path = bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
+[submodule "bundle/thumbnail.vim"]
+	path = bundle/thumbnail.vim
+	url = https://github.com/itchyny/thumbnail.vim.git
