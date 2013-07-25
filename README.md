@@ -30,6 +30,40 @@ $ git submodule update
 ctags - 5.8
 coffeetags - 0.0.3.0
 
+#### Support css/scss on Tagbar
+
+Please add this content to `.ctags` file in your `$HOME`
+
+```sh
+--langdef=scss
+--langmap=scss:.scss
+--regex-scss=/^[ \t]*([^\t {][^{]{1,100})(\t| )*\{/| \1/d,definition/
+--regex-scss=/^[@]mixin ([^ (]+).*/\1/m,mixing/
+--regex-scss=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
+--regex-scss=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
+--regex-scss=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
+--regex-scss=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
+
+--langdef=css
+--langmap=css:.css
+--regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
+--regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
+--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
+--regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
+```
+
+### Shortcut
+#### leader key is `,`
+
+`<F9>` : `Paste mode`
+`<F4>` : `Thumbnail`
+`<F2>` : `CoffeeLint`
+`FF` : `Ack`
+`FG` : `AckFile`
+`C-l` : `TagBar`
+`C-o` : `Nerdtree`
+`<Leader>c` : Switch cursor highlight.
+
 ### If your git commit was error, please set your git default editor
 `git config --global core.editor /usr/bin/vim`
 
