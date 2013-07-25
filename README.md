@@ -32,3 +32,41 @@ coffeetags - 0.0.3.0
 
 ### If your git commit was error, please set your git default editor
 `git config --global core.editor /usr/bin/vim`
+
+### Included plugins
+
+```sh
+[bundle] tree -L 1                                                                                                                                                                                                                                                                                      10:52:05  ☁  master ☀
+.
+├── Auto-Pairs
+├── ack.vim
+├── ag.vim
+├── colorselector
+├── ctrlp.vim
+├── dash.vim
+├── funcoo
+├── javascript-libraries-syntax
+├── nerdcommenter
+├── nerdtree
+├── rails.vim
+├── snipmate.vim
+├── supertab
+├── tagbar
+├── thumbnail.vim
+├── vim-autocomplpop
+├── vim-coffee-script
+├── vim-colors-solarized
+├── vim-fugitive
+├── vim-haml
+├── vim-indent-guides
+├── vim-markdown
+├── vim-multiedit
+├── vim-powerline
+├── vim-ruby
+├── vim-slim
+├── vim-snippets
+├── vim-startify
+├── vim-surround
+├── vimwiki
+└── zencoding-vim
+```
