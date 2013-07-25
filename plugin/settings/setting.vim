@@ -49,6 +49,8 @@ noremap TT :tabe<Space>
 "NERDTree
 map <C-o>   :NERDTreeToggle<CR>
 
+map <F4> :Thumbnail<CR>
+
 " Setting Highlight color
 hi cursorcolumn   ctermbg=black
 hi CursorLine     cterm=underline ctermbg=black
