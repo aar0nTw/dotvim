@@ -55,14 +55,14 @@ Please add this content to `.ctags` file in your `$HOME`
 ### Shortcut
 #### leader key is `,`
 
-`<F9>` : `Paste mode`
-`<F4>` : `Thumbnail`
-`<F2>` : `CoffeeLint`
-`FF` : `Ack`
-`FG` : `AckFile`
-`C-l` : `TagBar`
-`C-o` : `Nerdtree`
-`<Leader>c` : Switch cursor highlight.
+ - `<F9>` : `Paste mode`
+ - `<F4>` : `Thumbnail`
+ - `<F2>` : `CoffeeLint`
+ - `FF` : `Ack`
+ - `FG` : `AckFile`
+ - `C-l` : `TagBar`
+ - `C-o` : `Nerdtree`
+ - `<Leader>c` : Switch cursor highlight.
 
 ### If your git commit was error, please set your git default editor
 `git config --global core.editor /usr/bin/vim`
@@ -70,7 +70,7 @@ Please add this content to `.ctags` file in your `$HOME`
 ### Included plugins
 
 ```sh
-[bundle] tree -L 1                                                                                                                                                                                                                                                                                      10:52:05  ☁  master ☀
+[bundle] tree -L 1
 .
 ├── Auto-Pairs
 ├── ack.vim
