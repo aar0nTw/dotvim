@@ -24,3 +24,6 @@ noremap <F2> :CoffeeLint\|cwindow<CR>
 
 " Switch Highlight
 noremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+nnoremap <S-h> gT
+nnoremap <S-l> gt
