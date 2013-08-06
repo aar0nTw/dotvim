@@ -3,17 +3,17 @@ nmap <leader>v :tabe $MYVIMRC<CR>
 "Tabe open
 noremap TT :tabe<Space>
 "NERDTree
-map <C-o>   :NERDTreeToggle<CR>
+map <C-o> :NERDTreeToggle<CR>
 
 map <F4> :Thumbnail<CR>
 
-"TagBar 
+"TagBar
 nnoremap <C-l>  :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 "SwitchTab
 imap jj <ESC>
-imap kk <ESC> 
+imap kk <ESC>
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>

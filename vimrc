@@ -5,8 +5,8 @@ filetype indent on
 filetype plugin on
 syntax enable
 set t_Co=256
-"colorscheme solarized
-colors hemisu
+colors solarized
+"colors hemisu
 
 " Leader Key
 let mapleader = ","
@@ -19,3 +19,4 @@ set background=dark
 set autoread
 
 " Other Setting in plugin/settings/setting.vim
+" KeyMap Setting in plugin/settings/keymap.vim
