@@ -5,8 +5,8 @@ filetype indent on
 filetype plugin on
 syntax enable
 set t_Co=256
-colors solarized
-"colors hemisu
+"colors solarized
+colors hemisu
 
 " Leader Key
 let mapleader = ","

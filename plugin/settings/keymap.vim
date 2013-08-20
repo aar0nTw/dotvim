@@ -27,3 +27,8 @@ noremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 nnoremap <S-h> gT
 nnoremap <S-l> gt
+
+let g:turbux_command_rspec = 'zeus rspec'
+" turbux
+map <leader>r <Plug>SendFocusedTestToTmux
+
