@@ -91,3 +91,6 @@
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
