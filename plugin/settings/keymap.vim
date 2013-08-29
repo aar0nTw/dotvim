@@ -11,7 +11,6 @@ map <F4> :Thumbnail<CR>
 nnoremap <C-l>  :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
-"SwitchTab
 imap jj <ESC>
 imap kk <ESC>
 
@@ -25,6 +24,7 @@ noremap <F2> :CoffeeLint\|cwindow<CR>
 " Switch Highlight
 noremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
+"SwitchTab
 nnoremap <S-h> gT
 nnoremap <S-l> gt
 

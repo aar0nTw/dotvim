@@ -64,9 +64,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = git://github.com/honza/vim-snippets.git
-[submodule "bundle/snipmate.vim"]
-	path = bundle/snipmate.vim
-	url = git@github.com:aar0nTw/snipmate.vim.git
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = git://github.com/tpope/vim-haml.git
