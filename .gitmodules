@@ -94,3 +94,6 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-autocomplpop"]
+	path = bundle/vim-autocomplpop
+	url = https://github.com/othree/vim-autocomplpop.git
