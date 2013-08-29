@@ -97,3 +97,9 @@
 [submodule "bundle/vim-autocomplpop"]
 	path = bundle/vim-autocomplpop
 	url = https://github.com/othree/vim-autocomplpop.git
+[submodule "bundle/mw-utils"]
+	path = bundle/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
