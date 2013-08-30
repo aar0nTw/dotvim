@@ -1,9 +1,8 @@
+execute pathogen#infect()
 set encoding=utf-8
-call pathogen#infect()
+syntax on
 filetype on
-filetype indent on
-filetype plugin on
-syntax enable
+filetype plugin indent on
 set t_Co=256
 "colors solarized
 "colors hemisu
@@ -18,6 +17,5 @@ let g:SuperTabDefaultCompletionType="context"
 
 set background=dark
 set autoread
-
 " Other Setting in plugin/settings/setting.vim
 " KeyMap Setting in plugin/settings/keymap.vim
