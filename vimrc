@@ -1,4 +1,5 @@
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
 set encoding=utf-8
 syntax on
 filetype on
