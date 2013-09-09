@@ -6,7 +6,9 @@ filetype plugin on
 syntax enable
 set t_Co=256
 "colors solarized
-colors hemisu
+"colors hemisu
+"colors railscasts
+colors smyck
 
 " Leader Key
 let mapleader = ","
