@@ -7,7 +7,9 @@ filetype plugin indent on
 set t_Co=256
 "colors solarized
 "colors hemisu
-colors wombat256
+"colors wombat256
+"colors railscasts
+colors smyck
 
 " Leader Key
 let mapleader = ","
