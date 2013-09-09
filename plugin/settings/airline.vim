@@ -1,6 +1,6 @@
 "Custome airline setting
 "
-let g:airline_theme='wombat'
+let g:airline_theme='luna'
 set ttimeoutlen=50
 let g:airline_left_sep = ''
 let g:airline_left_sep = ''
