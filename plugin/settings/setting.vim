@@ -119,4 +119,4 @@ if executable('coffeetags')
 endif
 
 let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
-"let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
+let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'

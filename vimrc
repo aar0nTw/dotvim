@@ -5,11 +5,14 @@ syntax on
 filetype on
 filetype plugin indent on
 set t_Co=256
+set backspace=2
+set wildmenu
 "colors solarized
-"colors hemisu
+colors hemisu
 "colors wombat256
 "colors railscasts
-colors smyck
+"colors smyck
+set regexpengine=1
 
 " Leader Key
 let mapleader = ","
