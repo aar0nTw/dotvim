@@ -12,7 +12,6 @@ colors hemisu
 "colors wombat256
 "colors railscasts
 "colors smyck
-set regexpengine=1
 
 " Leader Key
 let mapleader = ","
