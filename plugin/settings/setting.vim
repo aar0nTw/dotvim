@@ -39,8 +39,8 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 
 " Setting Highlight color
-hi cursorcolumn   ctermbg=black
-hi CursorLine     cterm=underline ctermbg=black
+"hi cursorcolumn   ctermbg=black
+"hi CursorLine     ctermbg=black
 hi LineNr         ctermbg=23 ctermfg=73
 hi Normal ctermbg=none
 hi TabLineSel ctermfg=white ctermbg=52
