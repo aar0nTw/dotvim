@@ -24,3 +24,4 @@ set background=dark
 set autoread
 " Other Setting in plugin/settings/setting.vim
 " KeyMap Setting in plugin/settings/keymap.vim
+let g:neocomplcache_enable_at_startup = 1
