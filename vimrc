@@ -9,6 +9,7 @@ set backspace=2
 set wildmenu
 "colors solarized
 colors hemisu
+"colors pyte
 "colors wombat256
 "colors railscasts
 "colors smyck
