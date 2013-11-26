@@ -8,10 +8,14 @@ autocmd! BufNewFile,BufRead *.mxml set filetype=mxml
 
 
 " SCSS
+au! BufRead,BufNewFile *.sass set filetype=sass.css
+au! BufRead,BufNewFile *.styl set filetype=css
 autocmd! BufNewFile,BufRead *.scss set filetype=scss.css
 
 
 " eRuby
+au! BufRead,BufNewFile *.coffee.erb set filetype=eruby.coffee
+au! BufRead,BufNewFile *.js.erb set filetype=eruby.javascript
 autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
 
 

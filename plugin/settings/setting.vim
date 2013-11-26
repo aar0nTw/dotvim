@@ -50,6 +50,8 @@ hi TabLineFill ctermfg=darkblue
 " coffee indent fold
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
+au BufNewFile,BufReadPost *.coffee.erb setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee.erb setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 
 au BufNewFile,BufRead *.html.slim set syntax=slim
 
@@ -63,9 +65,6 @@ au BufNewFile,BufReadPost *.scss setl shiftwidth=2 expandtab softtabstop=2 tabst
 au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 au BufNewFile,BufReadPost *.styl setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 
-au BufRead,BufNewFile *.sass set filetype=css
-au BufRead,BufNewFile *.styl set filetype=css
-au BufRead,BufNewFile *.scss set filetype=scss
 
 au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass

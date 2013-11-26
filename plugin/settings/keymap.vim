@@ -1,5 +1,7 @@
 map <Leader><Leader> <Leader>c<space>
-nmap <leader>v :tabe $MYVIMRC<CR>
+nmap <Leader>v :tabe $MYVIMRC<CR>
+map <Leader>s :w<CR>
+
 "Tabe open
 noremap TT :tabe<Space>
 "NERDTree
