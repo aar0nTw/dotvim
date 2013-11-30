@@ -119,3 +119,4 @@ endif
 
 let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
+let g:syntastic_coffee_coffeelint_args = "--csv -f lint.json"
