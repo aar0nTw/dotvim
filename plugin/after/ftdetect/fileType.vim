@@ -6,6 +6,8 @@ autocmd! BufNewFile,BufRead *.m set filetype=objc
 autocmd! BufNewFile,BufRead *.as set filetype=actionscript
 autocmd! BufNewFile,BufRead *.mxml set filetype=mxml
 
+autocmd! BufNewFile,BufRead *.go set filetype=go
+
 
 " SCSS
 au! BufRead,BufNewFile *.sass set filetype=sass.css
