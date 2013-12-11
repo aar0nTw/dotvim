@@ -83,11 +83,11 @@ $ git submodule update
 ```
 
 ### Other dependency
-ctags - 5.8
-coffeetags - 0.0.3.0
-dash
-ack
-the_sliver_search (ag)
+- ctags - 5.8
+- coffeetags - 0.0.3.0
+- dash
+- ack
+- the_sliver_search (ag)
 
 #### Support css/scss on Tagbar
 
