@@ -1,6 +1,6 @@
 # Gabrielle.vim
 
-Garberielle.vim is a complete vim setting and toolbox for computers of aar0n :D
+Garberielle.vim is a complete vim settings and toolbox for computers of aar0n :D
 
 ## Plugins list
 
