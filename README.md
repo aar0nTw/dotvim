@@ -1,5 +1,61 @@
-#Aaron's VIM setting
+# Gabrielle.vim
 
+Garberielle.vim is a complete vim setting and toolbox for computers of aar0n :D
+
+## Plugins list
+
+```sh
+.
+├── Auto-Pairs
+├── ack.vim
+├── ag.vim
+├── colorselector
+├── ctrlp.vim
+├── dash.vim
+├── funcoo
+├── git-gutter
+├── go.vim
+├── html5.vim
+├── javascript-libraries-syntax
+├── julia
+├── localvimrc
+├── mw-utils
+├── neocomplcache
+├── nerdcommenter
+├── nerdtree
+├── rails.vim
+├── supertab
+├── switch.vim
+├── syntastic
+├── tagbar
+├── thumbnail.vim
+├── tlib
+├── tree
+├── tslime.vim
+├── vim-airline
+├── vim-autocomplpop
+├── vim-coffee-script
+├── vim-colors-solarized
+├── vim-endwise
+├── vim-fugitive
+├── vim-haml
+├── vim-indent-guides
+├── vim-l9
+├── vim-markdown
+├── vim-multiedit
+├── vim-ruby
+├── vim-slim
+├── vim-snipmate
+├── vim-snippets
+├── vim-startify
+├── vim-surround
+├── vim-turbux
+├── vimwiki
+└── zencoding-vim
+
+45 directories, 1 file
+
+```
 ## Screenshot:
 
 ![screen shot 2013-06-12 at 2 08 30 am](https://f.cloud.github.com/assets/935988/638746/49f91f04-d2c4-11e2-9198-f094cfdf9570.png)
@@ -29,6 +85,9 @@ $ git submodule update
 ### Other dependency
 ctags - 5.8
 coffeetags - 0.0.3.0
+dash
+ack
+the_sliver_search (ag)
 
 #### Support css/scss on Tagbar
 
@@ -67,40 +126,3 @@ Please add this content to `.ctags` file in your `$HOME`
 ### If your git commit was error, please set your git default editor
 `git config --global core.editor /usr/bin/vim`
 
-### Included plugins
-
-```sh
-[bundle] tree -L 1
-.
-├── Auto-Pairs
-├── ack.vim
-├── ag.vim
-├── colorselector
-├── ctrlp.vim
-├── dash.vim
-├── funcoo
-├── javascript-libraries-syntax
-├── nerdcommenter
-├── nerdtree
-├── rails.vim
-├── snipmate.vim
-├── supertab
-├── tagbar
-├── thumbnail.vim
-├── vim-autocomplpop
-├── vim-coffee-script
-├── vim-colors-solarized
-├── vim-fugitive
-├── vim-haml
-├── vim-indent-guides
-├── vim-markdown
-├── vim-multiedit
-├── vim-powerline
-├── vim-ruby
-├── vim-slim
-├── vim-snippets
-├── vim-startify
-├── vim-surround
-├── vimwiki
-└── zencoding-vim
-```
