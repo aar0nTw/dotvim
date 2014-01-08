@@ -1,5 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
+
 set encoding=utf-8
 syntax on
 filetype on
@@ -9,10 +10,10 @@ set backspace=2
 set wildmenu
 "colors solarized
 colors hemisu
-"colors pyte
+"colors smyck
 "colors wombat256
 "colors railscasts
-"colors smyck
+"
 
 " Leader Key
 let mapleader = ","
