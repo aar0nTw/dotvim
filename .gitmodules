@@ -164,3 +164,6 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/aar0nTw/vim-endwise.git
+[submodule "bundle/gitignore.vim"]
+	path = bundle/gitignore.vim
+	url = https://github.com/vim-scripts/gitignore.vim.git
