@@ -167,3 +167,6 @@
 [submodule "bundle/gitignore.vim"]
 	path = bundle/gitignore.vim
 	url = https://github.com/vim-scripts/gitignore.vim.git
+[submodule "bundle/vim-literate-coffeescript"]
+	path = bundle/vim-literate-coffeescript
+	url = https://github.com/mintplant/vim-literate-coffeescript.git
