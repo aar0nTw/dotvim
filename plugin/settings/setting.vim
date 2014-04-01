@@ -18,7 +18,7 @@ set shiftwidth=2
 set softtabstop=2
 set ignorecase
 set ruler
-"set cursorline
+set cursorline
 "set cursorcolumn
 set pastetoggle=<F9>
 set hlsearch
@@ -43,9 +43,9 @@ set wildignore+=tmp/**
 "hi CursorLine     ctermbg=black
 hi LineNr         ctermbg=23 ctermfg=73
 hi Normal ctermbg=none
-hi TabLineSel ctermfg=white ctermbg=52
-hi TabLine ctermfg=white ctermbg=darkblue
-hi TabLineFill ctermfg=darkblue
+hi TabLineSel ctermfg=23 ctermbg=73
+hi TabLine ctermfg=23
+hi TabLineFill ctermfg=23
 
 " coffee indent fold
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable

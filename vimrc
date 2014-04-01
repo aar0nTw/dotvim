@@ -8,8 +8,8 @@ filetype plugin indent on
 set t_Co=256
 set backspace=2
 set wildmenu
-"colors solarized
-colors hemisu
+colors solarized
+"colors hemisu
 "colors smyck
 "colors wombat256
 "colors railscasts
