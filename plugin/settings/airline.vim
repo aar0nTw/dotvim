@@ -12,7 +12,7 @@ let g:airline_linecolumn_prefix = '⭡'
 
 "let g:airline_linecolumn_prefix = ''
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#branch#enabled = 0
+let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#csv#enabled = 0
