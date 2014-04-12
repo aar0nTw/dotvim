@@ -117,6 +117,8 @@ if executable('coffeetags')
         \ }
 endif
 
-let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
+"let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv -f lint.json"
+let g:neocomplete#force_overwrite_completefunc = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
