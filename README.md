@@ -1,26 +1,33 @@
 # Gabrielle.vim
 
-Garberielle.vim is a complete vim settings and toolbox for computers of aar0n :D
+Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 
 ## Plugins list
 
 ```sh
+
 .
 ├── Auto-Pairs
+├── MatchTag
 ├── ack.vim
 ├── ag.vim
 ├── colorselector
 ├── ctrlp.vim
 ├── dash.vim
+├── emmet-vim
 ├── funcoo
 ├── git-gutter
+├── gitignore.vim
 ├── go.vim
 ├── html5.vim
 ├── javascript-libraries-syntax
 ├── julia
 ├── localvimrc
+├── matchit
 ├── mw-utils
-├── neocomplcache
+├── neocomplete.vim
+├── neosnippet-snippets
+├── neosnippet.vim
 ├── nerdcommenter
 ├── nerdtree
 ├── rails.vim
@@ -30,7 +37,6 @@ Garberielle.vim is a complete vim settings and toolbox for computers of aar0n :D
 ├── tagbar
 ├── thumbnail.vim
 ├── tlib
-├── tree
 ├── tslime.vim
 ├── vim-airline
 ├── vim-autocomplpop
@@ -41,19 +47,18 @@ Garberielle.vim is a complete vim settings and toolbox for computers of aar0n :D
 ├── vim-haml
 ├── vim-indent-guides
 ├── vim-l9
+├── vim-literate-coffeescript
 ├── vim-markdown
 ├── vim-multiedit
 ├── vim-ruby
 ├── vim-slim
-├── vim-snipmate
-├── vim-snippets
 ├── vim-startify
 ├── vim-surround
 ├── vim-turbux
-├── vimwiki
-└── zencoding-vim
+└── vimwiki
 
-45 directories, 1 file
+49 directories, 0 files
+
 
 ```
 ## Screenshot:
