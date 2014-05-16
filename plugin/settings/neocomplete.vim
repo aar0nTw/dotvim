@@ -23,7 +23,7 @@ let g:neocomplete#auto_completion_start_length = 3
 let g:neocomplete#enable_auto_select = 0
 
 " Cache
-let g:neocomplete#sources#tags#cache_limit_size = 99999999
+let g:neocomplete#sources#tags#cache_limit_size = 99999
 let g:neocomplete#data_directory = '~/.cache/neocomplete'
 
 " Recommended key-mappings.
