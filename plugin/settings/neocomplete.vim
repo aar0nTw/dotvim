@@ -14,7 +14,7 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Set list size
-let g:neocomplete#max_list = 8
+let g:neocomplete#max_list = 15
 
 " Set minimum input text before start completion
 let g:neocomplete#auto_completion_start_length = 3
@@ -23,8 +23,18 @@ let g:neocomplete#auto_completion_start_length = 3
 let g:neocomplete#enable_auto_select = 0
 
 " Cache
-let g:neocomplete#sources#tags#cache_limit_size = 99999
+let g:neocomplete#sources#tags#cache_limit_size = 999999
 let g:neocomplete#data_directory = '~/.cache/neocomplete'
+
+" Define keyword.
+"if !exists('g:neocomplete#keyword_patterns')
+    "let g:neocomplete#keyword_patterns = {}
+"endif
+"let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplete#undo_completion()
+inoremap <expr><C-l>     neocomplete#complete_common_string()
 
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
@@ -48,8 +58,8 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
 "if !exists('g:neocomplete#sources#omni#input_patterns')
