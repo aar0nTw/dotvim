@@ -72,6 +72,8 @@ au BufNewFile,BufRead *.styl set syntax=sass
 
 setlocal omnifunc=syntaxcomplete#Complete
 
+let g:tagbar_sort = 'Order'
+
 let g:tagbar_type_css = {
     \ 'ctagstype' : 'css',
     \ 'kinds'     : [

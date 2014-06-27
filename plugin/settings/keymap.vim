@@ -35,3 +35,8 @@ nnoremap <S-l> gt
 " turbux
 map <leader>r <Plug>SendFocusedTestToTmux
 
+"Copy / Paste in Mac OSX keyboard
+
+map  <F7> :r !pbpaste<CR>
+nmap <F8> :.w !pbcopy<CR><CR>
+vmap <C-c> :w !pbcopy<CR><CR>

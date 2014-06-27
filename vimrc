@@ -27,6 +27,6 @@ set background=dark
 set autoread
 " Other Setting in plugin/settings/setting.vim
 " KeyMap Setting in plugin/settings/keymap.vim
-" autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+"autocmd FileType ruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1

@@ -1,6 +1,6 @@
 "Custome airline setting
 "
-let g:airline_theme='laederon'
+let g:airline_theme='badwolf'
 set ttimeoutlen=50
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
