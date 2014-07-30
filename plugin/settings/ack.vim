@@ -1,5 +1,5 @@
 if executable("ag")
-    let g:ackprg = 'ag --nogroup --nocolor --column'
+    let g:ackprg = 'ag --nogroup --nocolor --column --ignore-case'
     noremap FF :Ack<SPACE>
     noremap FG :AckFile<SPACE>
 else

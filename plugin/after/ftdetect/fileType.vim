@@ -1,42 +1,37 @@
 " Objective-C
-autocmd! BufNewFile,BufRead *.m set filetype=objc
-
+autocmd! BufRead,BufNewFile *.m set filetype=objc
 
 " ActionScript
-autocmd! BufNewFile,BufRead *.as set filetype=actionscript
-autocmd! BufNewFile,BufRead *.mxml set filetype=mxml
+autocmd! BufRead,BufNewFile *.as set filetype=actionscript
+autocmd! BufRead,BufNewFile *.mxml set filetype=mxml
 
-autocmd! BufNewFile,BufRead *.go set filetype=go
-
+" GoLang
+autocmd! BufRead,BufNewFile *.go set filetype=go
 
 " SCSS
-au! BufRead,BufNewFile *.sass set filetype=sass.css
-au! BufRead,BufNewFile *.styl set filetype=css
-autocmd! BufNewFile,BufRead *.scss set filetype=scss.css
-
+autocmd! BufRead,BufNewFile *.sass set filetype=sass.css
+autocmd! BufRead,BufNewFile *.styl set filetype=css
+autocmd! BufRead,BufNewFile *.scss set filetype=scss.css
 
 " eRuby
-au! BufRead,BufNewFile *.coffee.erb set filetype=eruby.coffee
-au! BufRead,BufNewFile *.js.erb set filetype=eruby.javascript
-autocmd! BufNewFile,BufRead *.erb set filetype=eruby.html
-
+autocmd! BufRead,BufNewFile *.erb set filetype=eruby.html
+autocmd! BufRead,BufNewFile *.coffee.erb set filetype=eruby.coffee
+autocmd! BufRead,BufNewFile *.js.erb set filetype=eruby.javascript
+autocmd! BufRead,BufNewFile *.scss.erb setlocal filetype=scss.eruby
+autocmd! BufRead,BufNewFile *.sass.erb setlocal filetype=sass.eruby
 
 " JSON
-autocmd! BufNewFile,BufRead *.json set filetype=javascript
-
+autocmd! BufRead,BufNewFile *.json set filetype=javascript
 
 " GitIgnore
-autocmd! BufNewFile,BufRead *.gitignore set filetype=gitignore
-
+autocmd! BufRead,BufNewFile *.gitignore set filetype=gitignore
 
 " ZSH
-autocmd! BufNewFile,BufRead *.zsh-theme set filetype=zsh
-
+autocmd! BufRead,BufNewFile *.zsh-theme set filetype=zsh
 
 " Nginx Config
-autocmd! BufNewFile,BufRead nginx.conf set filetype=nginx
-
+autocmd! BufRead,BufNewFile nginx.conf set filetype=nginx
 
 " CocoaPods
-autocmd! BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
+autocmd! BufRead,BufNewFile Podfile,*.podspec set filetype=ruby
 
