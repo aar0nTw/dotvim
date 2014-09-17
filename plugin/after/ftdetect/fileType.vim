@@ -20,6 +20,9 @@ autocmd! BufRead,BufNewFile *.js.erb set filetype=eruby.javascript
 autocmd! BufRead,BufNewFile *.scss.erb setlocal filetype=scss.eruby
 autocmd! BufRead,BufNewFile *.sass.erb setlocal filetype=sass.eruby
 
+" CoffeeScript
+autocmd! BufRead,BufNewFile *.coffee set filetype=coffee.javascript
+
 " JSON
 autocmd! BufRead,BufNewFile *.json set filetype=javascript
 

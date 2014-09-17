@@ -14,7 +14,7 @@ colors hemisu
 "colors smyck
 "colors wombat256
 "colors railscasts
-
+"colors murphy
 
 " Leader Key
 let mapleader = ","
