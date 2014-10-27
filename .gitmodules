@@ -148,9 +148,6 @@
 	path = bundle/switch.vim
 	url = https://github.com/AndrewRadev/switch.vim.git
   ignore = dirty
-[submodule "bundle/go.vim"]
-	path = bundle/go.vim
-	url = https://github.com/golangtw/go.vim.git
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/aar0nTw/vim-endwise.git
