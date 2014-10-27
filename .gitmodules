@@ -97,7 +97,7 @@
 [submodule "bundle/thumbnail.vim"]
 	path = bundle/thumbnail.vim
 	url = https://github.com/itchyny/thumbnail.vim.git
-  ignore = untracked
+  ignore = dirty
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
