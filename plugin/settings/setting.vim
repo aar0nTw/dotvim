@@ -103,22 +103,6 @@ let g:tagbar_type_javascript = {
     \ ]
 \ }
 
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-endif
-
 "let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv -f lint.json"

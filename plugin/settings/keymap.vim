@@ -39,7 +39,7 @@ map <leader>r <Plug>SendFocusedTestToTmux
 
 map  <F7> :r !pbpaste<CR>
 nmap <F8> :.w !pbcopy<CR><CR>
-vmap <C-c> :w !pbcopy<CR><CR>
+vmap <C-l> :w !pbcopy<CR><CR>
 
 " Runner
 autocmd FileType ruby nmap <F5> :rubyf ./%<CR>
