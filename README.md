@@ -65,11 +65,9 @@ bundle
 ```
 ## Screenshot:
 
-![screen shot 2013-06-12 at 2 08 30 am](https://f.cloud.github.com/assets/935988/638746/49f91f04-d2c4-11e2-9198-f094cfdf9570.png)
-![screen shot 2013-06-12 at 2 19 38 am](https://f.cloud.github.com/assets/935988/638747/4a21686a-d2c4-11e2-896c-c4cf9ee35ea2.png)
-![screen shot 2013-06-12 at 2 21 57 am](https://f.cloud.github.com/assets/935988/638750/4a633970-d2c4-11e2-980e-e80eeeaf8f67.png)
-![screen shot 2013-06-12 at 2 22 22 am](https://f.cloud.github.com/assets/935988/638751/4a6f485a-d2c4-11e2-87ab-0d897062c4f0.png)
-![screen shot 2013-06-12 at 2 23 00 am](https://f.cloud.github.com/assets/935988/638754/53ddaf1c-d2c4-11e2-8084-73d8201a1595.png)
+![screen shot 2014-12-04 at 3 01 19 pm](https://cloud.githubusercontent.com/assets/935988/5294817/b15d7116-7bc6-11e4-9527-10f38ed0af94.png)
+![screen shot 2014-12-04 at 3 01 29 pm](https://cloud.githubusercontent.com/assets/935988/5294828/d49aadce-7bc6-11e4-918a-f799cb084a4e.png)
+![screen shot 2014-12-04 at 3 01 32 pm](https://cloud.githubusercontent.com/assets/935988/5294829/d81e3b82-7bc6-11e4-872e-c99d76e6ead1.png)
 
 ##Hou to use:
 
