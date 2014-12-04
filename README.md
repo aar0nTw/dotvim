@@ -2,11 +2,11 @@
 
 Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 
-## Plugins list
+## Bundles list
 
 ```sh
 
-.
+bundle
 ├── Auto-Pairs
 ├── MatchTag
 ├── ack.vim
@@ -18,7 +18,6 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 ├── funcoo
 ├── git-gutter
 ├── gitignore.vim
-├── go.vim
 ├── html5.vim
 ├── javascript-libraries-syntax
 ├── julia
@@ -40,6 +39,7 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 ├── tslime.vim
 ├── vim-airline
 ├── vim-autocomplpop
+├── vim-buffergator
 ├── vim-coffee-script
 ├── vim-colors-solarized
 ├── vim-endwise
@@ -47,9 +47,11 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 ├── vim-haml
 ├── vim-indent-guides
 ├── vim-l9
+├── vim-less
 ├── vim-literate-coffeescript
 ├── vim-markdown
 ├── vim-multiedit
+├── vim-node
 ├── vim-ruby
 ├── vim-slim
 ├── vim-startify
@@ -57,7 +59,7 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 ├── vim-turbux
 └── vimwiki
 
-49 directories, 0 files
+51 directories, 0 files
 
 
 ```

@@ -14,7 +14,7 @@ nnoremap <C-l>  :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 imap jj <ESC>
-imap kk <ESC>
+"imap kk <ESC>
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
