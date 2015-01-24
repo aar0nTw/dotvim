@@ -99,13 +99,14 @@ let g:tagbar_type_javascript = {
         \ 'o:objects',
         \ 'f:functions',
         \ 'a:arrays',
-        \ 's:strings'
+        \ 's:strings',
+        \ 'v:variables'
     \ ]
 \ }
 
 "let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
-let g:syntastic_coffee_coffeelint_args = "--csv -f lint.json"
+let g:syntastic_coffee_coffeelint_args = "--csv"
 let g:neocomplete#force_overwrite_completefunc = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
