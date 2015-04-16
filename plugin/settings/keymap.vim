@@ -13,6 +13,9 @@ map <F4> :Thumbnail<CR>
 nnoremap <C-l>  :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
+"Dash dash.vim
+nmap <silent> <leader>d <Plug>DashSearch
+
 imap jj <ESC>
 "imap kk <ESC>
 

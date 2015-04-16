@@ -181,3 +181,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "bundle/vim-cjsx"]
+	path = bundle/vim-cjsx
+	url = https://github.com/mtscout6/vim-cjsx.git
