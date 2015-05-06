@@ -25,7 +25,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 
 let g:Powerline_symbols = 'fancy'
-let g:SuperTabDefaultCompletionType="context"
+"let g:SuperTabDefaultCompletionType="context"
 
 set background=dark
 set autoread
@@ -48,3 +48,6 @@ function! s:Repl()
 endfunction
 
 vmap <silent> <expr> p <sid>Repl()
+
+set pumheight=12
+autocmd CompleteDone * pclose

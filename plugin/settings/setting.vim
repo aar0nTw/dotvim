@@ -108,3 +108,5 @@ let g:tagbar_type_javascript = {
 let g:syntastic_coffee_coffeelint_args = "--csv -f lint.json"
 let g:neocomplete#force_overwrite_completefunc = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+let tern#is_show_argument_hints_enabled = 0

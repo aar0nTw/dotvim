@@ -21,7 +21,21 @@ autocmd! BufRead,BufNewFile *.scss.erb setlocal filetype=scss.eruby
 autocmd! BufRead,BufNewFile *.sass.erb setlocal filetype=sass.eruby
 
 " CoffeeScript
-autocmd! BufRead,BufNewFile *.coffee set filetype=coffee.javascript
+augroup COFFEESCRIPT
+  autocmd BufRead,BufNewFile *.coffee call tern#Enable()
+  autocmd BufRead,BufNewFile *.coffee set filetype=coffee
+  autocmd BufRead,BufNewFile *.coffee set filetype=javascript.coffee
+augroup END
+
+augroup CJSX
+  au!
+  autocmd BufNewFile,BufRead *.csx,*.cjsx set filetype=coffee
+  autocmd BufNewFile,BufRead *.csx,*.cjsx set filetype=javascript.coffee
+  autocmd BufNewFile,BufRead *.csx,*.cjsx call tern#Enable()
+augroup END
+
+"JS
+autocmd! BufRead,BufNewFile *.js call tern#Enable()
 
 " JSON
 autocmd! BufRead,BufNewFile *.json set filetype=javascript

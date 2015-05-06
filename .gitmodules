@@ -184,3 +184,12 @@
 [submodule "bundle/vim-cjsx"]
 	path = bundle/vim-cjsx
 	url = https://github.com/mtscout6/vim-cjsx.git
+[submodule "bundle/tern_for_vim"]
+	path = bundle/tern_for_vim
+	url = git@github.com:marijnh/tern_for_vim.git
+[submodule "bundle/tern_for_vim_coffee"]
+	path = bundle/tern_for_vim_coffee
+	url = git@github.com:othree/tern_for_vim_coffee.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
