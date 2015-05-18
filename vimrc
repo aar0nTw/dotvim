@@ -15,6 +15,7 @@ set wildmenu
 "colors solarized
 "colors smyck
 colors wombat256
+"colors seoul256
 "colors railscasts
 "colors murphy
 
