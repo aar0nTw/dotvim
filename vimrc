@@ -52,3 +52,19 @@ vmap <silent> <expr> p <sid>Repl()
 
 set pumheight=12
 autocmd CompleteDone * pclose
+
+set clipboard+=unnamed
+
+function! RestoreRegister()
+    let @" = s:restore_reg
+    if &clipboard == "unnamed"
+        let @* = s:restore_reg
+    endif
+    return ''
+endfunction
+
+function! s:Repl()
+    let s:restore_reg = @"
+    return "p@=RestoreRegister()\<cr>"
+endfunction
+
