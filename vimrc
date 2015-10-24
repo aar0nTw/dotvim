@@ -10,11 +10,11 @@ filetype plugin indent on
 set t_Co=256
 set backspace=2
 set wildmenu
-"colors hemisu
+colors hemisu
 
 "colors solarized
 "colors smyck
-colors wombat256
+"colors wombat256
 "colors seoul256
 "colors railscasts
 "colors murphy
@@ -67,4 +67,26 @@ function! s:Repl()
     let s:restore_reg = @"
     return "p@=RestoreRegister()\<cr>"
 endfunction
+
+let g:startify_custom_header = [
+      \ '                                 ________  __ __        ',
+      \ '            __                  /\_____  \/\ \\ \       ',
+      \ '    __  __ /\_\    ___ ___      \/___//''/''\ \ \\ \    ',
+      \ '   /\ \/\ \\/\ \ /'' __` __`\        /'' /''  \ \ \\ \_ ',
+      \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \      /'' /''__  \ \__ ,__\',
+      \ '    \ \___/  \ \_\ \_\ \_\ \_\    /\_/ /\_\  \/_/\_\_/  ',
+      \ '     \/__/    \/_/\/_/\/_/\/_/    \//  \/_/     \/_/    ',
+      \ '',
+      \ '                            ,                           ',
+      \ '     ,-.       _,---._ __  / \                          ',
+      \ '    /  )    .-''       `./ /   \                         ',
+      \ '   (  (   ,''            `/    /|                        ',
+      \ '    \  `-''             \''\   / |                        ',
+      \ '     `.              ,  \ \ /  |                        ',
+      \ '      /`.          ,''-`----Y   |                        ',
+      \ '     (            ;        |   ''                        ',
+      \ '     |  ,-.    ,-''         |  /                         ',
+      \ '     |  | (   |        hjw | /                          ',
+      \ '     )  |  \  `.___________|/                           ',
+      \ '     `--''   `--''                                        ' ]
 
