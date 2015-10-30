@@ -107,9 +107,10 @@ let g:tagbar_type_javascript = {
 "let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv"
+let g:syntastic_coffee_checkers = []
 let g:neocomplete#force_overwrite_completefunc = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
 let g:syntastic_html_checkers = [] " Disable html checker
 
 let tern#is_show_argument_hints_enabled = 0
+
