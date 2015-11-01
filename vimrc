@@ -10,14 +10,14 @@ filetype plugin indent on
 set t_Co=256
 set backspace=2
 set wildmenu
-colors hemisu
+"colors hemisu
 
 "colors solarized
 "colors smyck
 "colors wombat256
 "colors seoul256
 "colors railscasts
-"colors murphy
+colors gruvbox
 
 " Leader Key
 let mapleader = ","
