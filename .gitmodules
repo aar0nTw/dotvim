@@ -54,10 +54,6 @@
 	path = bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
   ignore = untracked
-[submodule "bundle/javascript-libraries-syntax"]
-	path = bundle/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim
-  ignore = untracked
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
