@@ -93,3 +93,6 @@ let g:startify_custom_header = [
 let g:ycm_semantic_triggers = {
   \ 'coffee': ['.'],
   \ }
+
+let g:ycm_min_num_of_chars_for_completion = 1
+
