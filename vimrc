@@ -90,3 +90,6 @@ let g:startify_custom_header = [
       \ '     )  |  \  `.___________|/                           ',
       \ '     `--''   `--''                                        ' ]
 
+let g:ycm_semantic_triggers = {
+  \ 'coffee': ['.'],
+  \ }
