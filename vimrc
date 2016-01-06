@@ -90,3 +90,5 @@ let g:startify_custom_header = [
       \ '     )  |  \  `.___________|/                           ',
       \ '     `--''   `--''                                        ' ]
 
+
+let g:ctrlp_reuse_window  = 'startify'
