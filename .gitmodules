@@ -188,3 +188,15 @@
 [submodule "bundle/gruvbox"]
 	path = bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "bundle/vim-coloresque"]
+	path = bundle/vim-coloresque
+	url = https://github.com/gorodinskiy/vim-coloresque.git
+[submodule "bundle/vim-dasht"]
+	path = bundle/vim-dasht
+	url = https://github.com/sunaku/vim-dasht
+[submodule "bundle/vim-quantum"]
+	path = bundle/vim-quantum
+	url = git@github.com:tyrannicaltoucan/vim-quantum.git
+[submodule "bundle/vim-airline-theme"]
+	path = bundle/vim-airline-theme
+	url = git@github.com:vim-airline/vim-airline-themes.git
