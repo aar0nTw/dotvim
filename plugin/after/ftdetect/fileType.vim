@@ -20,6 +20,13 @@ autocmd! BufRead,BufNewFile *.js.erb set filetype=eruby.javascript
 autocmd! BufRead,BufNewFile *.scss.erb setlocal filetype=scss.eruby
 autocmd! BufRead,BufNewFile *.sass.erb setlocal filetype=sass.eruby
 
+" Ruby
+autocmd! BufRead,BufNewFile *.cap set filetype=ruby
+
+" Groovey
+au BufNewFile,BufRead *.groovy  setf groovy
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
 " CoffeeScript
 augroup COFFEESCRIPT
   autocmd BufRead,BufNewFile *.coffee call tern#Enable()
