@@ -9,22 +9,22 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 bundle
 ├── Auto-Pairs
 ├── MatchTag
+├── YouCompleteMe
 ├── ack.vim
 ├── ag.vim
+├── basal.vim
 ├── colorselector
 ├── ctrlp.vim
-├── dash.vim
 ├── emmet-vim
 ├── funcoo
 ├── git-gutter
 ├── gitignore.vim
+├── gruvbox
 ├── html5.vim
-├── javascript-libraries-syntax
 ├── julia
 ├── localvimrc
 ├── matchit
 ├── mw-utils
-├── neocomplete.vim
 ├── neosnippet-snippets
 ├── neosnippet.vim
 ├── nerdcommenter
@@ -33,17 +33,25 @@ bundle
 ├── supertab
 ├── switch.vim
 ├── syntastic
+├── tabular
 ├── tagbar
+├── tender.vim
+├── tern_for_vim
+├── tern_for_vim_coffee
 ├── thumbnail.vim
 ├── tlib
 ├── tslime.vim
 ├── vim-airline
-├── vim-autocomplpop
+├── vim-airline-theme
 ├── vim-buffergator
+├── vim-cjsx
 ├── vim-coffee-script
+├── vim-coloresque
 ├── vim-colors-solarized
+├── vim-dasht
 ├── vim-endwise
 ├── vim-fugitive
+├── vim-go
 ├── vim-haml
 ├── vim-indent-guides
 ├── vim-l9
@@ -52,14 +60,18 @@ bundle
 ├── vim-markdown
 ├── vim-multiedit
 ├── vim-node
+├── vim-quantum
 ├── vim-ruby
 ├── vim-slim
+├── vim-solarized8
+├── vim-srcery
 ├── vim-startify
 ├── vim-surround
+├── vim-test
 ├── vim-turbux
 └── vimwiki
 
-51 directories, 0 files
+63 directories, 0 files
 
 
 ```
@@ -71,9 +83,9 @@ bundle
 
 ##Hou to use:
 
-`git clone https://github.com/aar0nTw/Aaron-Vimrc.git`
+`git clone https://github.com/aar0nTw/Garberielle.vim.git`
 
-`mv Aaron-Vimrc ~/.vim`
+`mv Garberielle.vim ~/.vim`
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 

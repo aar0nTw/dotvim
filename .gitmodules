@@ -54,10 +54,6 @@
 	path = bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
   ignore = untracked
-[submodule "bundle/javascript-libraries-syntax"]
-	path = bundle/javascript-libraries-syntax
-	url = https://github.com/othree/javascript-libraries-syntax.vim
-  ignore = untracked
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
@@ -113,10 +109,6 @@
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
-  ignore = untracked
-[submodule "bundle/vim-autocomplpop"]
-	path = bundle/vim-autocomplpop
-	url = https://github.com/othree/vim-autocomplpop.git
   ignore = untracked
 [submodule "bundle/mw-utils"]
 	path = bundle/mw-utils
@@ -196,3 +188,33 @@
 [submodule "bundle/gruvbox"]
 	path = bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "bundle/vim-coloresque"]
+	path = bundle/vim-coloresque
+	url = https://github.com/gorodinskiy/vim-coloresque.git
+[submodule "bundle/vim-dasht"]
+	path = bundle/vim-dasht
+	url = https://github.com/sunaku/vim-dasht
+[submodule "bundle/vim-quantum"]
+	path = bundle/vim-quantum
+	url = git@github.com:tyrannicaltoucan/vim-quantum.git
+[submodule "bundle/vim-airline-theme"]
+	path = bundle/vim-airline-theme
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "bundle/vim-solarized8"]
+	path = bundle/vim-solarized8
+	url = git@github.com:lifepillar/vim-solarized8.git
+[submodule "bundle/vim-srcery"]
+	path = bundle/vim-srcery
+	url = git@github.com:roosta/vim-srcery.git
+[submodule "bundle/vim-test"]
+	path = bundle/vim-test
+	url = git@github.com:janko-m/vim-test.git
+[submodule "bundle/basal.vim"]
+	path = bundle/basal.vim
+	url = git@github.com:jdsimcoe/basal.vim.git
+[submodule "bundle/tender.vim"]
+	path = bundle/tender.vim
+	url = git@github.com:jacoborus/tender.vim.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git@github.com:godlygeek/tabular.git

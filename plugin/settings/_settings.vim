@@ -1,3 +1,7 @@
+"ture color
+if has("termguicolors")
+    set termguicolors
+endif
 " vimrc
 set showtabline=2
 set nobomb
@@ -6,7 +10,6 @@ set nobackup        " no backup file
 set noswapfile      " no swap file
 
 set list listchars=tab:»·,trail:·
-
 set number
 set cindent
 set smartindent
@@ -18,11 +21,30 @@ set shiftwidth=2
 set softtabstop=2
 set ignorecase
 set ruler
-"set cursorline
+set cursorline
 "set cursorcolumn
 set pastetoggle=<F9>
 set hlsearch
 set incsearch
+
+set background=dark
+"colors hemisu
+"colors solarized
+"colors smyck
+"colors wombat256
+"colors seoul256
+"colors railscasts
+"colors gruvbox
+"colors quantum
+"colors srcery
+"colors basal
+"colors solarized8_dark
+colors tender
+
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
+highlight Comment gui=italic
 
 " disable splashscreen
 set shortmess+=I
@@ -37,15 +59,6 @@ set wildignore+=*sass-cache*
 set wildignore+=*.DS_Store
 set wildignore+=log/**
 set wildignore+=tmp/**
-
-" Setting Highlight color
-"hi CursorColumn   ctermbg=black
-"hi CursorLine     ctermbg=black
-hi LineNr         ctermbg=23 ctermfg=73
-hi Normal ctermbg=none
-hi TabLineSel ctermfg=23 ctermbg=73
-hi TabLine ctermfg=23
-hi TabLineFill ctermfg=23
 
 " coffee indent fold
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
@@ -70,7 +83,7 @@ au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass
 au BufNewFile,BufRead *.styl set syntax=sass
 
-setlocal omnifunc=syntaxcomplete#Complete
+"setlocal omnifunc=syntaxcomplete#Complete
 
 let g:tagbar_sort = 'Order'
 
@@ -108,7 +121,7 @@ let g:tagbar_type_javascript = {
 "let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv"
 let g:syntastic_coffee_checkers = []
-let g:neocomplete#force_overwrite_completefunc = 1
+"let g:neocomplete#force_overwrite_completefunc = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:syntastic_html_checkers = [] " Disable html checker
 
