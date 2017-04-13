@@ -118,10 +118,6 @@
 	path = bundle/tlib
 	url = https://github.com/tomtom/tlib_vim.git
   ignore = untracked
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-  ignore = untracked
 [submodule "bundle/git-gutter"]
 	path = bundle/git-gutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -218,3 +214,9 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git@github.com:godlygeek/tabular.git
+[submodule "bundle/codi.vim"]
+	path = bundle/codi.vim
+	url = git@github.com:metakirby5/codi.vim.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
