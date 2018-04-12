@@ -48,3 +48,5 @@ vmap <C-l> :w !pbcopy<CR><CR>
 autocmd FileType ruby nmap <F5> :rubyf ./%<CR>
 autocmd FileType coffee nmap <F5> :silent !coffee %<CR>
 nmap <F3> :NeoCompleteTagMakeCache<CR>
+
+map $ g_
