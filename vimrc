@@ -5,11 +5,15 @@ let mapleader = ","
 set encoding=utf-8
 set ff=unix
 set synmaxcol=256
+set t_Co=256
 syntax on
 filetype on
 filetype plugin indent on
 set backspace=2
 set wildmenu
+
+let g:solarized_termcolors=256
+set background=dark
 
 let g:ale_sign_column_always = 1
 

@@ -1,4 +1,8 @@
-if executable("ag")
+if executable("rg")
+    let g:ackprg='rg --vimgrep'
+    noremap FF :Ack<SPACE>
+    noremap FG :AckFile<SPACE>
+elseif executable("ag")
     let g:ackprg = 'ag --nogroup --nocolor --column --ignore-case'
     noremap FF :Ack<SPACE>
     noremap FG :AckFile<SPACE>

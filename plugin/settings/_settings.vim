@@ -39,12 +39,13 @@ set background=dark
 "colors srcery
 "colors basal
 "colors solarized8_dark
-colors tender
+"colors tender
+colors heman
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-highlight Comment cterm=italic
-highlight Comment gui=italic
+highlight Comment cterm=bold,italic
+highlight Comment gui=bold,italic
 
 " disable splashscreen
 set shortmess+=I
