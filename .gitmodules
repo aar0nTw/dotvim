@@ -207,3 +207,6 @@
 [submodule "bundle/vim-nerdtree-syntax-highlight"]
 	path = bundle/vim-nerdtree-syntax-highlight
 	url = git@github.com:tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "bundle/vim-styled-components"]
+	path = bundle/vim-styled-components
+	url = git@github.com:styled-components/vim-styled-components.git
