@@ -39,13 +39,13 @@ set background=dark
 "colors srcery
 "colors basal
 "colors solarized8_dark
-"colors tender
-colors heman
+colors tender
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 highlight Comment cterm=bold,italic
 highlight Comment gui=bold,italic
+highlight LineNr guibg=#3e3e3e guifg=#9e9e9e
 
 " disable splashscreen
 set shortmess+=I
@@ -84,6 +84,9 @@ au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass
 au BufNewFile,BufRead *.styl set syntax=sass
 
+let g:used_javascript_libs = 'react,underscore,jquery'
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
 "setlocal omnifunc=syntaxcomplete#Complete
 
 let g:tagbar_sort = 'Order'
@@ -109,13 +112,7 @@ let g:tagbar_type_scss = {
 
 let g:tagbar_type_javascript = {
     \ 'ctagstype' : 'JavaScript',
-    \ 'kinds'     : [
-        \ 'o:objects',
-        \ 'f:functions',
-        \ 'a:arrays',
-        \ 's:strings',
-        \ 'v:variables'
-    \ ]
+    \ 'ctagsbin' : 'es-ctags'
 \ }
 
 "let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
