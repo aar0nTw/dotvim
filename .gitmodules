@@ -138,9 +138,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
-[submodule "bundle/vim-cjsx"]
-	path = bundle/vim-cjsx
-	url = https://github.com/mtscout6/vim-cjsx.git
 [submodule "bundle/tern_for_vim"]
 	path = bundle/tern_for_vim
 	url = git@github.com:marijnh/tern_for_vim.git
@@ -189,9 +186,6 @@
 [submodule "bundle/Jenkinsfile-vim-syntax"]
 	path = bundle/Jenkinsfile-vim-syntax
 	url = git@github.com:martinda/Jenkinsfile-vim-syntax.git
-[submodule "bundle/yajs.vim"]
-	path = bundle/yajs.vim
-	url = git@github.com:othree/yajs.vim.git
 [submodule "bundle/javascript-libraries-syntax.vim"]
 	path = bundle/javascript-libraries-syntax.vim
 	url = git@github.com:othree/javascript-libraries-syntax.vim.git
@@ -210,3 +204,6 @@
 [submodule "bundle/vim-styled-components"]
 	path = bundle/vim-styled-components
 	url = git@github.com:styled-components/vim-styled-components.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
