@@ -1,6 +1,56 @@
-# Gabrielle.vim
 
-Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
+# dotvim
+
+A complete neovim settings and toolbox backups.
+
+##Hou to use:
+
+`git clone https://github.com/aar0nTw/dotvim.git`
+
+`mv dotvim ~/.vim`
+
+`ln -s ~/.vim/vimrc ~/.vimrc`
+
+Initialize bundle submodule:
+
+```
+$ cd ~/.vim
+
+$ git submodule init
+
+$ git submodule update
+```
+
+### Other dependency
+- ctags - 5.8
+- coffeetags - 0.0.3.0
+- dash
+- ack
+- the_sliver_search (ag)
+- pip/neovim
+- fzf
+
+#### Support css/scss on Tagbar
+
+Please add this content to `.ctags` file in your `$HOME`
+
+```sh
+--langdef=scss
+--langmap=scss:.scss
+--regex-scss=/^[ \t]*([^\t {][^{]{1,100})(\t| )*\{/| \1/d,definition/
+--regex-scss=/^[@]mixin ([^ (]+).*/\1/m,mixing/
+--regex-scss=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
+--regex-scss=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
+--regex-scss=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
+--regex-scss=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
+
+--langdef=css
+--langmap=css:.css
+--regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
+--regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
+--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
+--regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
+```
 
 ## Bundles list
 
@@ -72,52 +122,6 @@ bundle
 
 62 directories, 0 files
 
-```
-##Hou to use:
-
-`git clone https://github.com/aar0nTw/Garberielle.vim.git`
-
-`mv Garberielle.vim ~/.vim`
-
-`ln -s ~/.vim/vimrc ~/.vimrc`
-
-Initialize bundle submodule:
-
-```
-$ cd ~/.vim
-
-$ git submodule init
-
-$ git submodule update
-```
-
-### Other dependency
-- ctags - 5.8
-- coffeetags - 0.0.3.0
-- dash
-- ack
-- the_sliver_search (ag)
-
-#### Support css/scss on Tagbar
-
-Please add this content to `.ctags` file in your `$HOME`
-
-```sh
---langdef=scss
---langmap=scss:.scss
---regex-scss=/^[ \t]*([^\t {][^{]{1,100})(\t| )*\{/| \1/d,definition/
---regex-scss=/^[@]mixin ([^ (]+).*/\1/m,mixing/
---regex-scss=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
---regex-scss=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
---regex-scss=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
---regex-scss=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
-
---langdef=css
---langmap=css:.css
---regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
---regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
---regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
---regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
 ```
 
 ### Shortcut
