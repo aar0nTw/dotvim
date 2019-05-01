@@ -8,31 +8,28 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 
 bundle
 ├── Auto-Pairs
+├── Jenkinsfile-vim-syntax
 ├── MatchTag
 ├── YouCompleteMe
 ├── ack.vim
 ├── ag.vim
-├── basal.vim
+├── ale
 ├── colorselector
 ├── ctrlp.vim
 ├── emmet-vim
-├── funcoo
 ├── git-gutter
 ├── gitignore.vim
 ├── gruvbox
 ├── html5.vim
-├── julia
+├── javascript-libraries-syntax.vim
 ├── localvimrc
 ├── matchit
 ├── mw-utils
-├── neosnippet-snippets
-├── neosnippet.vim
 ├── nerdcommenter
 ├── nerdtree
 ├── rails.vim
 ├── supertab
 ├── switch.vim
-├── syntastic
 ├── tabular
 ├── tagbar
 ├── tender.vim
@@ -43,22 +40,24 @@ bundle
 ├── tslime.vim
 ├── vim-airline
 ├── vim-airline-theme
+├── vim-archery
 ├── vim-buffergator
-├── vim-cjsx
 ├── vim-coffee-script
 ├── vim-coloresque
 ├── vim-colors-solarized
 ├── vim-dasht
+├── vim-devicons
 ├── vim-endwise
 ├── vim-fugitive
 ├── vim-go
-├── vim-haml
 ├── vim-indent-guides
+├── vim-javascript
+├── vim-jsx
 ├── vim-l9
-├── vim-less
 ├── vim-literate-coffeescript
 ├── vim-markdown
 ├── vim-multiedit
+├── vim-nerdtree-syntax-highlight
 ├── vim-node
 ├── vim-quantum
 ├── vim-ruby
@@ -66,21 +65,14 @@ bundle
 ├── vim-solarized8
 ├── vim-srcery
 ├── vim-startify
+├── vim-styled-components
 ├── vim-surround
 ├── vim-test
-├── vim-turbux
-└── vimwiki
+└── vim-turbux
 
-63 directories, 0 files
-
+62 directories, 0 files
 
 ```
-## Screenshot:
-
-![screen shot 2014-12-04 at 3 01 19 pm](https://cloud.githubusercontent.com/assets/935988/5294817/b15d7116-7bc6-11e4-9527-10f38ed0af94.png)
-![screen shot 2014-12-04 at 3 01 29 pm](https://cloud.githubusercontent.com/assets/935988/5294828/d49aadce-7bc6-11e4-918a-f799cb084a4e.png)
-![screen shot 2014-12-04 at 3 01 32 pm](https://cloud.githubusercontent.com/assets/935988/5294829/d81e3b82-7bc6-11e4-872e-c99d76e6ead1.png)
-
 ##Hou to use:
 
 `git clone https://github.com/aar0nTw/Garberielle.vim.git`
