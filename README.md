@@ -3,7 +3,7 @@
 
 A complete neovim settings and toolbox backups.
 
-##Hou to use:
+## Hou to use:
 
 `git clone https://github.com/aar0nTw/dotvim.git`
 
