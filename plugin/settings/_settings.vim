@@ -61,6 +61,8 @@ set wildignore+=*.DS_Store
 set wildignore+=log/**
 set wildignore+=tmp/**
 
+" fzf
+
 " coffee indent fold
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
