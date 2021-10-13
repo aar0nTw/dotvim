@@ -28,6 +28,7 @@ set hlsearch
 set incsearch
 
 set background=dark
+"colors default
 "colors hemisu
 "colors solarized
 "colors smyck
@@ -36,10 +37,11 @@ set background=dark
 "colors railscasts
 "colors gruvbox
 "colors quantum
-"colors srcery
+colors srcery
 "colors basal
 "colors solarized8_dark
-colors tender
+"colors tender
+"colors industry
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
@@ -86,6 +88,9 @@ au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass
 au BufNewFile,BufRead *.styl set syntax=sass
 
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
 let g:used_javascript_libs = 'react,underscore,jquery'
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
@@ -117,8 +122,22 @@ let g:tagbar_type_javascript = {
     \ 'ctagsbin' : 'es-ctags'
 \ }
 
-"let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
-"let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
+
+let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
+let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv"
 let g:syntastic_coffee_checkers = []
 "let g:neocomplete#force_overwrite_completefunc = 1

@@ -14,7 +14,7 @@ nnoremap <C-l>  :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 "Dash dash.vim
-nmap <silent> <leader>d <Plug>DashSearch
+"nmap <silent> <leader>d <Plug>DashSearch
 
 imap jj <ESC>
 "imap kk <ESC>
@@ -50,3 +50,8 @@ autocmd FileType coffee nmap <F5> :silent !coffee %<CR>
 nmap <F3> :NeoCompleteTagMakeCache<CR>
 
 map $ g_
+
+nmap <Leader>af :ALEFix<CR>
+nmap <Leader>ad :ALEDisableBuffer<CR>
+nmap <Leader>ae :ALEEnableBuffer<CR>
+

@@ -16,6 +16,7 @@ let g:solarized_termcolors=256
 set background=dark
 
 let g:ale_sign_column_always = 1
+let g:python3_host_prog = '/usr/bin/python3'
 
 " Other Setting in plugin/settings/setting.vim
 " KeyMap Setting in plugin/settings/keymap.vim
@@ -53,8 +54,18 @@ function! s:Repl()
     return "p@=RestoreRegister()\<cr>"
 endfunction
 
-let g:ycm_semantic_triggers = {
-  \ 'coffee': ['.'],
+let g:ycm_semantic_triggers =  {
+  \   'c': ['->', '.'],
+  \   'objc': ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
+  \            're!\[.*\]\s'],
+  \   'ocaml': ['.', '#'],
+  \   'cpp,cuda,objcpp': ['->', '.', '::'],
+  \   'perl': ['->'],
+  \   'php': ['->', '::'],
+  \   'cs,d,elixir,go,groovy,java,javascript,julia,perl6,python,scala,typescript,vb': ['.'],
+  \   'ruby,rust': ['.', '::'],
+  \   'lua': ['.', ':'],
+  \   'erlang': [':'],
   \ }
 
 let g:ycm_min_num_of_chars_for_completion = 1
@@ -63,4 +74,14 @@ let g:ctrlp_reuse_window  = 'startify'
 
 let g:go_fmt_command = "goimports"
 
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
+\   'javascript.jsx': ['prettier'],
+\   'typescript.tsx': ['prettier'],
+\   'css': ['prettier'],
+\}
+
 set autoread
+
+autocmd BufWritePost * GitGutter
