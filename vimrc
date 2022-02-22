@@ -16,7 +16,6 @@ let g:solarized_termcolors=256
 set background=dark
 
 let g:ale_sign_column_always = 1
-let g:python3_host_prog = '/usr/bin/python3'
 
 " Other Setting in plugin/settings/setting.vim
 " KeyMap Setting in plugin/settings/keymap.vim
