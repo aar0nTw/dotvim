@@ -198,3 +198,6 @@
 [submodule "bundle/vim-graphql"]
 	path = bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:preservim/tagbar.git
