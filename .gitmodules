@@ -10,10 +10,6 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
   ignore = untracked
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar
-  ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
