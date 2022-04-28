@@ -126,12 +126,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
-[submodule "bundle/tern_for_vim"]
-	path = bundle/tern_for_vim
-	url = git@github.com:marijnh/tern_for_vim.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
