@@ -2,10 +2,6 @@
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
   ignore = untracked
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-  ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
@@ -130,9 +126,6 @@
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht
-[submodule "bundle/vim-quantum"]
-	path = bundle/vim-quantum
-	url = git@github.com:tyrannicaltoucan/vim-quantum.git
 [submodule "bundle/vim-airline-theme"]
 	path = bundle/vim-airline-theme
 	url = git@github.com:vim-airline/vim-airline-themes.git
