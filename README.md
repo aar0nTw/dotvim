@@ -16,12 +16,12 @@ Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 
 Initialize `pathogen` bundle submodule (DEPRECATED, Will move to `dein.vim`):
 
-```
-$ cd ~/.vim
+```sh
+cd ~/.vim
 
-$ git submodule init
+git submodule init
 
-$ git submodule update
+git submodule update
 ```
 
 Install dein.vim plugin manager
@@ -37,17 +37,18 @@ Run following commands in vim:
 `:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json`
 
 ### Shortcut
+
 #### leader key is `,`
 
- - `<F9>` : `Paste mode`
- - `<F4>` : `Thumbnail`
- - `<F2>` : `CoffeeLint`
- - `FF` : `Ack`
- - `FG` : `AckFile`
- - `C-l` : `Vista`
- - `C-o` : `Nerdtree`
- - `<Leader>c` : Switch cursor highlight.
+- `<F9>` : `Paste mode`
+- `<F4>` : `Thumbnail`
+- `<F2>` : `CoffeeLint`
+- `FF` : `Ack`
+- `FG` : `AckFile`
+- `C-l` : `Vista`
+- `C-o` : `Nerdtree`
+- `<Leader>c` : Switch cursor highlight.
 
 ### If your git commit was error, please set your git default editor
-`git config --global core.editor /usr/bin/vim`
 
+`git config --global core.editor /usr/bin/vim`
