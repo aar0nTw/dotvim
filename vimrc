@@ -27,6 +27,7 @@ call dein#add('mhinz/vim-startify')
 call dein#add('ctrlpvim/ctrlp.vim')
 call dein#add('lifepillar/vim-solarized8')
 call dein#add('tyrannicaltoucan/vim-quantum')
+call dein#add('vim-scripts/L9')
 
 " Required:
 call dein#end()
