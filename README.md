@@ -2,78 +2,11 @@
 
 Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
 
-## Bundles list
+## Prerequisites
 
-```sh
+`brew install universal_ctags rg fzf`
 
-bundle
-├── Auto-Pairs
-├── Jenkinsfile-vim-syntax
-├── MatchTag
-├── YouCompleteMe
-├── ack.vim
-├── ag.vim
-├── ale
-├── colorselector
-├── ctrlp.vim
-├── emmet-vim
-├── git-gutter
-├── gitignore.vim
-├── gruvbox
-├── html5.vim
-├── javascript-libraries-syntax.vim
-├── localvimrc
-├── matchit
-├── mw-utils
-├── nerdcommenter
-├── nerdtree
-├── rails.vim
-├── supertab
-├── switch.vim
-├── tabular
-├── tagbar
-├── tender.vim
-├── tern_for_vim
-├── tern_for_vim_coffee
-├── thumbnail.vim
-├── tlib
-├── tslime.vim
-├── vim-airline
-├── vim-airline-theme
-├── vim-archery
-├── vim-buffergator
-├── vim-coffee-script
-├── vim-coloresque
-├── vim-colors-solarized
-├── vim-dasht
-├── vim-devicons
-├── vim-endwise
-├── vim-fugitive
-├── vim-go
-├── vim-indent-guides
-├── vim-javascript
-├── vim-jsx
-├── vim-l9
-├── vim-literate-coffeescript
-├── vim-markdown
-├── vim-multiedit
-├── vim-nerdtree-syntax-highlight
-├── vim-node
-├── vim-quantum
-├── vim-ruby
-├── vim-slim
-├── vim-solarized8
-├── vim-srcery
-├── vim-startify
-├── vim-styled-components
-├── vim-surround
-├── vim-test
-└── vim-turbux
-
-62 directories, 0 files
-
-```
-##Hou to use:
+## Usage
 
 `git clone https://github.com/aar0nTw/Garberielle.vim.git`
 
@@ -81,7 +14,7 @@ bundle
 
 `ln -s ~/.vim/vimrc ~/.vimrc`
 
-Initialize bundle submodule:
+Initialize `pathogen` bundle submodule (DEPRECATED, Will move to `dein.vim`):
 
 ```
 $ cd ~/.vim
@@ -91,34 +24,17 @@ $ git submodule init
 $ git submodule update
 ```
 
-### Other dependency
-- ctags - 5.8
-- coffeetags - 0.0.3.0
-- dash
-- ack
-- the_sliver_search (ag)
+Install dein.vim plugin manager
 
-#### Support css/scss on Tagbar
+`sh ./install.sh ./dein`
 
-Please add this content to `.ctags` file in your `$HOME`
+Run following commands in vim:
 
-```sh
---langdef=scss
---langmap=scss:.scss
---regex-scss=/^[ \t]*([^\t {][^{]{1,100})(\t| )*\{/| \1/d,definition/
---regex-scss=/^[@]mixin ([^ (]+).*/\1/m,mixing/
---regex-scss=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
---regex-scss=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
---regex-scss=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
---regex-scss=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
+`:call dein#install()`
 
---langdef=css
---langmap=css:.css
---regex-css=/^[ \t]*\.([A-Za-z0-9_-]+)/.\1/c,class,classes/
---regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/
---regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/
---regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/m,media,medias/ 
-```
+## Optional
+
+`:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json`
 
 ### Shortcut
 #### leader key is `,`
@@ -128,7 +44,7 @@ Please add this content to `.ctags` file in your `$HOME`
  - `<F2>` : `CoffeeLint`
  - `FF` : `Ack`
  - `FG` : `AckFile`
- - `C-l` : `TagBar`
+ - `C-l` : `Vista`
  - `C-o` : `Nerdtree`
  - `<Leader>c` : Switch cursor highlight.
 
