@@ -22,7 +22,7 @@ set softtabstop=2
 set ignorecase
 set ruler
 set cursorline
-"set cursorcolumn
+set cursorcolumn
 set pastetoggle=<F9>
 set hlsearch
 set incsearch
@@ -30,17 +30,17 @@ set incsearch
 set background=dark
 "colors default
 "colors hemisu
-"colors solarized
-"colors smyck
-"colors wombat256
-"colors seoul256
+""colors solarized
+""colors smyck
+""colors wombat256
+""colors seoul256
 "colors railscasts
 "colors gruvbox
 "colors quantum
 "colors srcery
 "colors basal
-"colors solarized8_dark
-colors solarized8_dark_high
+colors solarized8_dark
+"colors solarized8_dark_high
 "colors tender
 "colors industry
 

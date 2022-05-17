@@ -6,10 +6,6 @@
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
   ignore = untracked
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-  ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
@@ -65,10 +61,6 @@
 [submodule "bundle/vim-multiedit"]
 	path = bundle/vim-multiedit
 	url = git://github.com/hlissner/vim-multiedit.git
-  ignore = untracked
-[submodule "bundle/vim-startify"]
-	path = bundle/vim-startify
-	url = https://github.com/mhinz/vim-startify.git
   ignore = untracked
 [submodule "bundle/vim-turbux"]
 	path = bundle/vim-turbux
@@ -195,3 +187,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git@github.com:preservim/tagbar.git
+[submodule "bundle/coc.nvim"]
+	path = bundle/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git

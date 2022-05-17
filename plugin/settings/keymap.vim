@@ -6,6 +6,7 @@ map <Leader>s :w<CR>
 noremap TT :tabe<Space>
 "NERDTree
 map <C-o> :NERDTreeToggle<CR>
+map <Leader><Leader>r :NERDTreeFind<CR>
 
 map <F4> :Thumbnail<CR>
 
