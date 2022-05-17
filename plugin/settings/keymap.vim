@@ -11,7 +11,7 @@ map <Leader><Leader>r :NERDTreeFind<CR>
 map <F4> :Thumbnail<CR>
 
 "TagBar
-nnoremap <C-l>  :TagbarToggle<CR>
+nnoremap <C-l>  :Vista!!<CR>
 let g:tagbar_autofocus = 1
 
 "Dash dash.vim

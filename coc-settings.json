@@ -1,0 +1,5 @@
+{
+  "snippets.textmateSnippetsRoots": [
+    "~/.config/coc/vscode-snippets/angular-snippets"
+  ]
+}

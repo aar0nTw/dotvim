@@ -28,10 +28,12 @@ call dein#add('ctrlpvim/ctrlp.vim')
 call dein#add('lifepillar/vim-solarized8')
 call dein#add('tyrannicaltoucan/vim-quantum')
 call dein#add('vim-scripts/L9')
+call dein#add('liuchengxu/vista.vim')
+call dein#add('junegunn/fzf.vim')
 
 " Required:
 call dein#end()
-colors solarized8_high
+colors solarized8
 
 " Required:
 filetype plugin indent on
@@ -43,6 +45,7 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+set rtp+=/opt/homebrew/opt/fzf
 
 
 let mapleader = ","
