@@ -24,6 +24,7 @@ call dein#add('/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 call dein#add('wsdjeg/dein-ui.vim')
 call dein#add('preservim/nerdtree')
 call dein#add('mhinz/vim-startify')
+call dein#add('ctrlpvim/ctrlp.vim')
 
 " Required:
 call dein#end()
