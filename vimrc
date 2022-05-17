@@ -25,18 +25,20 @@ call dein#add('wsdjeg/dein-ui.vim')
 call dein#add('preservim/nerdtree')
 call dein#add('mhinz/vim-startify')
 call dein#add('ctrlpvim/ctrlp.vim')
+call dein#add('lifepillar/vim-solarized8')
 
 " Required:
 call dein#end()
+colors solarized8_high
 
 " Required:
 filetype plugin indent on
 syntax enable
 
 " If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
+if dein#check_install()
+  call dein#install()
+endif
 
 "End dein Scripts-------------------------
 

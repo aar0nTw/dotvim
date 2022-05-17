@@ -39,7 +39,7 @@ set background=dark
 "colors quantum
 "colors srcery
 "colors basal
-colors solarized8_dark
+"colors solarized8_dark
 "colors solarized8_dark_high
 "colors tender
 "colors industry

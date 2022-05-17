@@ -136,9 +136,6 @@
 [submodule "bundle/vim-airline-theme"]
 	path = bundle/vim-airline-theme
 	url = git@github.com:vim-airline/vim-airline-themes.git
-[submodule "bundle/vim-solarized8"]
-	path = bundle/vim-solarized8
-	url = git@github.com:lifepillar/vim-solarized8.git
 [submodule "bundle/vim-srcery"]
 	path = bundle/vim-srcery
 	url = git@github.com:roosta/vim-srcery.git
