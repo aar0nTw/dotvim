@@ -38,7 +38,6 @@ call dein#add('kyazdani42/nvim-tree.lua')
 call dein#add('ryanoasis/vim-devicons')
 call dein#add('dense-analysis/ale')
 call dein#add('airblade/vim-gitgutter')
-call dein#add('mattn/emmet-vim')
 call dein#add('terrortylor/nvim-comment')
 call dein#add('tpope/vim-fugitive')
 call dein#add('tpope/vim-surround')
@@ -46,6 +45,18 @@ call dein#add('AndrewRadev/switch.vim')
 call dein#add('kassio/neoterm')
 call dein#add('andymass/vim-matchup')
 call dein#add('jiangmiao/auto-pairs')
+call dein#add('tpope/vim-endwise')
+
+" Lazy:
+call dein#add('mattn/emmet-vim')
+call dein#config('emmet-vim', { 'lazy': 1, 'on_ft' : 'html' })
+
+call dein#add('leafgarland/typescript-vim')
+call dein#config('typesciprt-vim', { 'lazy': 1, 'on_ft' : 'typescript' })
+
+call dein#add('elzr/vim-json')
+call dein#config('typesciprt-vim', { 'lazy': 1, 'on_ft' : ['javascript', 'typescript', 'json'] })
+
 
 " Required:
 call dein#end()

@@ -43,7 +43,7 @@ augroup END
 autocmd! BufRead,BufNewFile *.js call tern#Enable()
 
 " JSON
-autocmd! BufRead,BufNewFile *.json set filetype=javascript
+autocmd! BufRead,BufNewFile *.json set filetype=json
 
 " GitIgnore
 autocmd! BufRead,BufNewFile *.gitignore set filetype=gitignore
