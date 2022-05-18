@@ -1,4 +1,4 @@
-map <Leader><Leader> <Leader>c<space>
+map <Leader><Leader> gc<space>
 nmap <Leader>v :tabe $MYVIMRC<CR>
 map <Leader>s :w<CR>
 

@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 "pathogen --------------------------------
 call pathogen#infect()
 call pathogen#helptags()
@@ -8,8 +10,11 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
+" Set: runtime path
+set rtp+=/Users/aaron/.config/nvim/lua
+set rtp+=/opt/homebrew/opt/fzf
+" Required: for dein.vim plugin management
+set rtp+=/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 
 " Required:
 call dein#begin('/Users/aaron/.config/nvim/./dein')
@@ -36,10 +41,15 @@ call dein#add('ryanoasis/vim-devicons')
 call dein#add('dense-analysis/ale')
 call dein#add('tpope/vim-fugitive')
 call dein#add('airblade/vim-gitgutter')
+call dein#add('terrortylor/nvim-comment')
 
 " Required:
 call dein#end()
-lua require'nvim-tree'.setup();
+
+" Load: lua settings
+lua require'settings';
+
+" Set: colorscheme
 colors solarized8
 
 " Required:
@@ -52,28 +62,18 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
-set rtp+=/opt/homebrew/opt/fzf
 
 set termguicolors
 
 let mapleader = ","
-set encoding=utf-8
 set ff=unix
 set synmaxcol=256
 set t_Co=256
-syntax on
-filetype on
-filetype plugin indent on
 set backspace=2
 set wildmenu
+set pumheight=12
 
 let g:ale_sign_column_always = 1
-
-" Other Setting in plugin/settings/setting.vim
-" KeyMap Setting in plugin/settings/keymap.vim
-
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
 function! RestoreRegister()
   let @" = s:restore_reg
@@ -87,27 +87,9 @@ endfunction
 
 vmap <silent> <expr> p <sid>Repl()
 
-set pumheight=12
 autocmd CompleteDone * pclose
 
 set clipboard+=unnamed
-
-function! RestoreRegister()
-    let @" = s:restore_reg
-    if &clipboard == "unnamed"
-        let @* = s:restore_reg
-    endif
-    return ''
-endfunction
-
-function! s:Repl()
-    let s:restore_reg = @"
-    return "p@=RestoreRegister()\<cr>"
-endfunction
-
-let g:ycm_min_num_of_chars_for_completion = 1
-
-let g:ctrlp_reuse_window  = 'startify'
 
 let g:go_fmt_command = "goimports"
 
@@ -120,5 +102,3 @@ let g:ale_fixers = {
 \}
 
 set autoread
-
-autocmd BufWritePost * GitGutter
