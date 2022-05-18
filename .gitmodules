@@ -6,10 +6,6 @@
 	path = bundle/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
   ignore = untracked
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
-  ignore = untracked
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -49,10 +45,6 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = git://github.com/slim-template/vim-slim.git
-  ignore = untracked
-[submodule "bundle/ag.vim"]
-	path = bundle/ag.vim
-	url = git://github.com/rking/ag.vim.git
   ignore = untracked
 [submodule "bundle/vim-multiedit"]
 	path = bundle/vim-multiedit
@@ -117,9 +109,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
-[submodule "bundle/gruvbox"]
-	path = bundle/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
 [submodule "bundle/vim-coloresque"]
 	path = bundle/vim-coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque.git
