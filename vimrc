@@ -43,6 +43,7 @@ call dein#add('terrortylor/nvim-comment')
 call dein#add('tpope/vim-fugitive')
 call dein#add('tpope/vim-surround')
 call dein#add('AndrewRadev/switch.vim')
+call dein#add('kassio/neoterm')
 
 " Required:
 call dein#end()
