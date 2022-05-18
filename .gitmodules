@@ -70,9 +70,6 @@
 [submodule "bundle/vim-literate-coffeescript"]
 	path = bundle/vim-literate-coffeescript
 	url = https://github.com/mintplant/vim-literate-coffeescript.git
-[submodule "bundle/MatchTag"]
-	path = bundle/MatchTag
-	url = https://github.com/gregsexton/MatchTag.git
 [submodule "bundle/vim-node"]
 	path = bundle/vim-node
 	url = https://github.com/moll/vim-node.git
