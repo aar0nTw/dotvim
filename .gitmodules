@@ -66,10 +66,6 @@
 	path = bundle/tlib
 	url = https://github.com/tomtom/tlib_vim.git
   ignore = untracked
-[submodule "bundle/git-gutter"]
-	path = bundle/git-gutter
-	url = https://github.com/airblade/vim-gitgutter.git
-  ignore = untracked
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git

@@ -35,6 +35,7 @@ call dein#add('kyazdani42/nvim-tree.lua')
 call dein#add('ryanoasis/vim-devicons')
 call dein#add('dense-analysis/ale')
 call dein#add('tpope/vim-fugitive')
+call dein#add('airblade/vim-gitgutter')
 
 " Required:
 call dein#end()
