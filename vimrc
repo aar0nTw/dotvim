@@ -21,6 +21,7 @@ call dein#add('/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 " Add or remove your plugins here like this:
 "call dein#add('Shougo/neosnippet.vim')
 "call dein#add('Shougo/neosnippet-snippets')
+call dein#add('rcarriga/nvim-notify')
 call dein#add('wsdjeg/dein-ui.vim')
 call dein#add('preservim/nerdtree')
 call dein#add('mhinz/vim-startify')
