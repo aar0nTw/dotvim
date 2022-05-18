@@ -23,7 +23,6 @@ call dein#add('/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 "call dein#add('Shougo/neosnippet-snippets')
 call dein#add('rcarriga/nvim-notify')
 call dein#add('wsdjeg/dein-ui.vim')
-call dein#add('preservim/nerdtree')
 call dein#add('mhinz/vim-startify')
 call dein#add('ctrlpvim/ctrlp.vim')
 call dein#add('lifepillar/vim-solarized8')
@@ -33,6 +32,7 @@ call dein#add('liuchengxu/vista.vim')
 call dein#add('junegunn/fzf.vim')
 call dein#add('kyazdani42/nvim-web-devicons')
 call dein#add('kyazdani42/nvim-tree.lua')
+call dein#add('ryanoasis/vim-devicons')
 
 " Required:
 call dein#end()
