@@ -45,6 +45,7 @@ call dein#add('tpope/vim-surround')
 call dein#add('AndrewRadev/switch.vim')
 call dein#add('kassio/neoterm')
 call dein#add('andymass/vim-matchup')
+call dein#add('jiangmiao/auto-pairs')
 
 " Required:
 call dein#end()
