@@ -10,10 +10,6 @@
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
   ignore = untracked
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-  ignore = untracked
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
@@ -81,9 +77,6 @@
 [submodule "bundle/MatchTag"]
 	path = bundle/MatchTag
 	url = https://github.com/gregsexton/MatchTag.git
-[submodule "bundle/emmet-vim"]
-	path = bundle/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-node"]
 	path = bundle/vim-node
 	url = https://github.com/moll/vim-node.git
@@ -102,9 +95,6 @@
 [submodule "bundle/vim-airline-theme"]
 	path = bundle/vim-airline-theme
 	url = git@github.com:vim-airline/vim-airline-themes.git
-[submodule "bundle/vim-srcery"]
-	path = bundle/vim-srcery
-	url = git@github.com:roosta/vim-srcery.git
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = git@github.com:janko-m/vim-test.git
