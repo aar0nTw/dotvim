@@ -31,9 +31,12 @@ call dein#add('tyrannicaltoucan/vim-quantum')
 call dein#add('vim-scripts/L9')
 call dein#add('liuchengxu/vista.vim')
 call dein#add('junegunn/fzf.vim')
+call dein#add('kyazdani42/nvim-web-devicons')
+call dein#add('kyazdani42/nvim-tree.lua')
 
 " Required:
 call dein#end()
+lua require'nvim-tree'.setup();
 colors solarized8
 
 " Required:
@@ -48,6 +51,7 @@ endif
 "End dein Scripts-------------------------
 set rtp+=/opt/homebrew/opt/fzf
 
+set termguicolors
 
 let mapleader = ","
 set encoding=utf-8
@@ -59,9 +63,6 @@ filetype on
 filetype plugin indent on
 set backspace=2
 set wildmenu
-
-let g:solarized_termcolors=256
-set background=dark
 
 let g:ale_sign_column_always = 1
 
@@ -100,20 +101,6 @@ function! s:Repl()
     let s:restore_reg = @"
     return "p@=RestoreRegister()\<cr>"
 endfunction
-
-let g:ycm_semantic_triggers =  {
-  \   'c': ['->', '.'],
-  \   'objc': ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-  \            're!\[.*\]\s'],
-  \   'ocaml': ['.', '#'],
-  \   'cpp,cuda,objcpp': ['->', '.', '::'],
-  \   'perl': ['->'],
-  \   'php': ['->', '::'],
-  \   'cs,d,elixir,go,groovy,java,javascript,julia,perl6,python,scala,typescript,vb': ['.'],
-  \   'ruby,rust': ['.', '::'],
-  \   'lua': ['.', ':'],
-  \   'erlang': [':'],
-  \ }
 
 let g:ycm_min_num_of_chars_for_completion = 1
 

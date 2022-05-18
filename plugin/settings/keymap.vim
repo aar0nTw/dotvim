@@ -5,8 +5,8 @@ map <Leader>s :w<CR>
 "Tabe open
 noremap TT :tabe<Space>
 "NERDTree
-map <C-o> :NERDTreeToggle<CR>
-map <Leader><Leader>r :NERDTreeFind<CR>
+"map <C-o> :NERDTreeToggle<CR>
+"map <Leader><Leader>r :NERDTreeFind<CR>
 
 map <F4> :Thumbnail<CR>
 
