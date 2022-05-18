@@ -33,6 +33,8 @@ call dein#add('junegunn/fzf.vim')
 call dein#add('kyazdani42/nvim-web-devicons')
 call dein#add('kyazdani42/nvim-tree.lua')
 call dein#add('ryanoasis/vim-devicons')
+call dein#add('dense-analysis/ale')
+call dein#add('tpope/vim-fugitive')
 
 " Required:
 call dein#end()
