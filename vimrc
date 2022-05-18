@@ -24,8 +24,6 @@ call dein#begin('/Users/aaron/.config/nvim/./dein')
 call dein#add('/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here like this:
-"call dein#add('Shougo/neosnippet.vim')
-"call dein#add('Shougo/neosnippet-snippets')
 call dein#add('rcarriga/nvim-notify')
 call dein#add('wsdjeg/dein-ui.vim')
 call dein#add('mhinz/vim-startify')
@@ -73,8 +71,6 @@ set backspace=2
 set wildmenu
 set pumheight=12
 
-let g:ale_sign_column_always = 1
-
 function! RestoreRegister()
   let @" = s:restore_reg
   return ''
@@ -92,13 +88,5 @@ autocmd CompleteDone * pclose
 set clipboard+=unnamed
 
 let g:go_fmt_command = "goimports"
-
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'typescript': ['prettier'],
-\   'javascript.jsx': ['prettier'],
-\   'typescript.tsx': ['prettier'],
-\   'css': ['prettier'],
-\}
 
 set autoread

@@ -1,7 +1,3 @@
-"ture color
-if has("termguicolors")
-    set termguicolors
-endif
 " vimrc
 set showtabline=2
 set nobomb
@@ -28,21 +24,6 @@ set hlsearch
 set incsearch
 
 set background=dark
-"colors default
-"colors hemisu
-""colors solarized
-""colors smyck
-""colors wombat256
-""colors seoul256
-"colors railscasts
-"colors gruvbox
-"colors quantum
-"colors srcery
-"colors basal
-"colors solarized8_dark
-"colors solarized8_dark_high
-"colors tender
-"colors industry
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
@@ -66,12 +47,12 @@ set wildignore+=tmp/**
 
 " fzf
 
-" coffee indent fold
+" " coffee indent fold
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 au BufNewFile,BufReadPost *.coffee.erb setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee.erb setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
-
+" 
 au BufNewFile,BufRead *.html.slim set syntax=slim
 
 " Javascript indent
@@ -84,7 +65,6 @@ au BufNewFile,BufReadPost *.scss setl shiftwidth=2 expandtab softtabstop=2 tabst
 au BufNewFile,BufReadPost *.sass setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 au BufNewFile,BufReadPost *.styl setl shiftwidth=2 expandtab softtabstop=2 tabstop=2
 
-
 au BufNewFile,BufRead *.scss set syntax=scss
 au BufNewFile,BufRead *.sass set syntax=sass
 au BufNewFile,BufRead *.styl set syntax=sass
@@ -96,47 +76,6 @@ let g:used_javascript_libs = 'react,underscore,jquery'
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 "setlocal omnifunc=syntaxcomplete#Complete
-
-let g:tagbar_sort = 'Order'
-
-let g:tagbar_type_css = {
-    \ 'ctagstype' : 'css',
-    \ 'kinds'     : [
-    \ 'c:classes',
-    \ 's:selectors',
-    \ 'i:identities'
-    \ ],
-    \ }
-
-let g:tagbar_type_scss = {
-    \ 'ctagstype' : 'scss',
-    \ 'kinds'     : [
-    \ 'c:classes',
-    \ 's:selectors',
-    \ 'm:mixing',
-    \ 'i:identities'
-    \ ],
-    \ }
-
-let g:tagbar_type_javascript = {
-    \ 'ctagstype' : 'JavaScript',
-    \ 'ctagsbin' : 'es-ctags'
-\ }
-
-let g:tagbar_type_typescript = {
-  \ 'ctagstype': 'typescript',
-  \ 'kinds': [
-    \ 'c:classes',
-    \ 'n:modules',
-    \ 'f:functions',
-    \ 'v:variables',
-    \ 'v:varlambdas',
-    \ 'm:members',
-    \ 'i:interfaces',
-    \ 'e:enums',
-  \ ]
-\ }
-
 let g:acp_behaviorUserDefinedMeets = 'acp#meetsForKeyword'
 let g:acp_behaviorUserDefinedFunction = 'syntaxcomplete#Complete'
 let g:syntastic_coffee_coffeelint_args = "--csv"
