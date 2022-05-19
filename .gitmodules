@@ -61,9 +61,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = git@github.com:janko-m/vim-test.git
-[submodule "bundle/tender.vim"]
-	path = bundle/tender.vim
-	url = git@github.com:jacoborus/tender.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git@github.com:godlygeek/tabular.git

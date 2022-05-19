@@ -12,3 +12,9 @@ repo = "lifepillar/vim-solarized8"
 
 [[plugins]]
 repo = "taDachs/kit.vim"
+
+[[plugins]]
+repo = "jacoborus/tender.vim"
+
+[[plugins]]
+repo = "morhetz/gruvbox"
