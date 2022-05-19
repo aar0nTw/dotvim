@@ -6,10 +6,6 @@
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
   ignore = untracked
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
-  ignore = untracked
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
@@ -66,15 +62,6 @@
 [submodule "bundle/vim-node"]
 	path = bundle/vim-node
 	url = https://github.com/moll/vim-node.git
-[submodule "bundle/vim-buffergator"]
-	path = bundle/vim-buffergator
-	url = https://github.com/jeetsukumaran/vim-buffergator.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
-[submodule "bundle/vim-coloresque"]
-	path = bundle/vim-coloresque
-	url = https://github.com/gorodinskiy/vim-coloresque.git
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht
@@ -105,6 +92,3 @@
 [submodule "bundle/vim-graphql"]
 	path = bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql.git
-[submodule "bundle/coc.nvim"]
-	path = bundle/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git

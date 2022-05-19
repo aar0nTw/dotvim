@@ -1,7 +1,135 @@
 [[plugins]]
+repo = "neoclide/coc.nvim"
+rev = "release"
+merged = "v:false"
+
+[[plugins]]
+repo = "rcarriga/nvim-notify"
+
+[[plugins]]
+repo = "ap/vim-css-color"
+
+[[plugins]]
+repo = "wsdjeg/dein-ui.vim"
+
+[[plugins]]
+repo = "mhinz/vim-startify"
+
+[[plugins]]
+repo = "tyrannicaltoucan/vim-quantum"
+
+[[plugins]]
+repo = "liuchengxu/vista.vim"
+
+[[plugins]]
+repo = "liuchengxu/vim-clap"
+
+[[plugins]]
+repo = "junegunn/fzf.vim"
+
+[[plugins]]
+repo = "ryanoasis/vim-devicons"
+
+[[plugins]]
+repo = "kyazdani42/nvim-web-devicons"
+depends = ["vim-devicons"]
+
+[[plugins]]
+repo = "kyazdani42/nvim-tree.lua"
+depends = ["nvim-web-devicons", "vim-devicons"]
+
+[[plugins]]
+repo = "dense-analysis/ale"
+
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+
+[[plugins]]
+repo = "terrortylor/nvim-comment"
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+
+[[plugins]]
+repo = "tpope/vim-surround"
+
+[[plugins]]
+repo = "AndrewRadev/switch.vim"
+
+[[plugins]]
+repo = "kassio/neoterm"
+
+[[plugins]]
+repo = "vim-airline/vim-airline"
+
+[[plugins]]
+repo = "vim-airline/vim-airline-themes"
+
+[[plugins]]
+repo = "jlanzarotta/bufexplorer"
+
+[[plugins]]
+repo = "andymass/vim-matchup"
+hook_add = '''
+lua <<LUA
+require'nvim-treesitter.configs'.setup {
+  matchup = {
+    enable = true,
+  },
+}
+LUA
+'''
+# Disable match hl in insert mode.
+# Make make match highlight less jarring.
+hook_post_source = '''
+let g:matchup_matchpref = {}
+let g:matchup_matchpref.vue = {'tagnameonly': 1}
+let g:matchup_matchpref.html = {'tagnameonly': 1}
+let g:matchup_matchparen_nomode = 'i'
+hi MatchParen ctermbg=blue guibg=lightblue cterm=italic gui=bold
+'''
+
+[[plugins]]
+repo = "jiangmiao/auto-pairs"
+
+[[plugins]]
+repo = "tpope/vim-endwise"
+
+[[plugins]]
+repo = "nvim-treesitter/nvim-treesitter"
+hook_add = '''
+lua <<LUA
+require('nvim-treesitter.configs').setup {
+  ensure_installed = {
+    'json',
+    'javascript',
+    'css',
+    'typescript',
+    'toml',
+    'vim',
+    'html',
+    'python',
+    'bash',
+    'lua',
+    'markdown'
+  },
+  sync_install = false,
+  highlight = {
+    enable = true,
+    disable = {'javascript', 'html', 'typescript'},
+    additional_vim_regex_highlighting = {'html', 'typescript'},
+  },
+}
+LUA
+'''
+hook_done_update = '''
+TSUpdate
+'''
+
+[[plugins]]
 repo = 'neovim/nvim-lsp'
 hook_add = '''
-lua << EOF
+lua <<LUA
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -45,5 +173,5 @@ for _, lsp in pairs(servers) do
     }
   }
 end
-EOF
+LUA
 '''

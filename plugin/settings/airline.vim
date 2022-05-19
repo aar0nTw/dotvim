@@ -1,7 +1,8 @@
 "Custome airline setting
 "
 let g:airline_symbols = {}
-let g:airline_theme='luna'
+let g:rigel_airline = 1
+let g:airline_theme = 'rigel'
 set ttimeoutlen=50
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''

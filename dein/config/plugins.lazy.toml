@@ -9,3 +9,19 @@ on_ft = ['typescript']
 [[plugins]]
 repo = 'elzr/vim-json'
 on_ft = ['json']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+rev = 'main'
+
+[[plugins]]
+if = 'v:false'
+repo = 'preservim/vim-markdown'
+on_ft = ['md', 'markdown']
+hook_add = '''
+  let g:vim_markdown_folding_disabled = 1
+'''

@@ -1,5 +1,6 @@
 {
   "snippets.textmateSnippetsRoots": [
     "~/.config/coc/vscode-snippets/angular-snippets"
-  ]
+  ],
+  "angular.enable-strict-mode-prompt": false
 }
