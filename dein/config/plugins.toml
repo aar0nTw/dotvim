@@ -60,6 +60,15 @@ repo = "AndrewRadev/switch.vim"
 repo = "kassio/neoterm"
 
 [[plugins]]
+repo = "vim-airline/vim-airline"
+
+[[plugins]]
+repo = "vim-airline/vim-airline-themes"
+
+[[plugins]]
+repo = "jlanzarotta/bufexplorer"
+
+[[plugins]]
 repo = "andymass/vim-matchup"
 hook_add = '''
 lua <<LUA
