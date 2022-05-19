@@ -10,6 +10,7 @@ set wildmenu
 set pumheight=12
 
 let mapleader = ","
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 "pathogen --------------------------------
 call pathogen#infect()
@@ -27,7 +28,7 @@ set rtp+=/opt/homebrew/opt/fzf
 " Required: for dein.vim plugin management
 set rtp+=~/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 
-" Required:
+" Dein.vim Setup Required:
 let s:toml = '~/.config/nvim/./dein/config/plugins.toml'
 let s:lazy_toml = '~/.config/nvim/./dein/config/plugins.lazy.toml'
 let g:dein#auto_recache = v:false
