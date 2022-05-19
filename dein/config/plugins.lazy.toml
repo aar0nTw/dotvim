@@ -3,6 +3,10 @@ repo = 'mattn/emmet-vim'
 on_ft = ['html']
 
 [[plugins]]
+repo = 'vim-scripts/gitignore.vim'
+on_ft = ['gitignore']
+
+[[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript']
 
