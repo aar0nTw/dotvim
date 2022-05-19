@@ -26,14 +26,6 @@
 	path = bundle/vim-multiedit
 	url = git://github.com/hlissner/vim-multiedit.git
   ignore = untracked
-[submodule "bundle/vim-turbux"]
-	path = bundle/vim-turbux
-	url = https://github.com/jgdavey/vim-turbux.git
-  ignore = untracked
-[submodule "bundle/tslime.vim"]
-	path = bundle/tslime.vim
-	url = https://github.com/jgdavey/tslime.vim.git
-  ignore = untracked
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git

@@ -16,6 +16,17 @@ repo = "wsdjeg/dein-ui.vim"
 repo = "mhinz/vim-startify"
 
 [[plugins]]
+repo = "tpope/vim-dispatch"
+
+[[plugins]]
+repo = "jgdavey/tslime.vim"
+hook_add = '''
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+let g:tslime_autoset_pane = 1
+'''
+
+[[plugins]]
 repo = "tyrannicaltoucan/vim-quantum"
 
 [[plugins]]
