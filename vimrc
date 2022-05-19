@@ -1,5 +1,16 @@
 set encoding=utf-8
 
+set t_Co=256
+set termguicolors
+
+set ff=unix
+set synmaxcol=256
+set backspace=2
+set wildmenu
+set pumheight=12
+
+let mapleader = ","
+
 "pathogen --------------------------------
 call pathogen#infect()
 call pathogen#helptags()
@@ -14,52 +25,49 @@ endif
 set rtp+=/Users/aaron/.config/nvim/lua
 set rtp+=/opt/homebrew/opt/fzf
 " Required: for dein.vim plugin management
-set rtp+=/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
+set rtp+=~/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-call dein#begin('/Users/aaron/.config/nvim/./dein')
+let s:toml = '~/.config/nvim/./dein/config/plugins.toml'
+let s:lazy_toml = '~/.config/nvim/./dein/config/plugins.lazy.toml'
+if dein#load_state('~/.config/nvim/./dein')
+  call dein#begin('~/.config/nvim/./dein')
 
-" Let dein manage dein
-" Required:
-call dein#add('/Users/aaron/.config/nvim/./dein/repos/github.com/Shougo/dein.vim')
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.config/nvim/./dein/repos/github.com/Shougo/dein.vim')
 
-" Add or remove your plugins here like this:
-call dein#add('rcarriga/nvim-notify')
-call dein#add('wsdjeg/dein-ui.vim')
-call dein#add('mhinz/vim-startify')
-call dein#add('tyrannicaltoucan/vim-quantum')
-call dein#add('vim-scripts/L9')
-call dein#add('lifepillar/vim-solarized8')
-call dein#add('liuchengxu/vista.vim')
-call dein#add('liuchengxu/vim-clap')
-call dein#add('junegunn/fzf.vim')
-call dein#add('kyazdani42/nvim-web-devicons')
-call dein#add('kyazdani42/nvim-tree.lua')
-call dein#add('ryanoasis/vim-devicons')
-call dein#add('dense-analysis/ale')
-call dein#add('airblade/vim-gitgutter')
-call dein#add('terrortylor/nvim-comment')
-call dein#add('tpope/vim-fugitive')
-call dein#add('tpope/vim-surround')
-call dein#add('AndrewRadev/switch.vim')
-call dein#add('kassio/neoterm')
-call dein#add('andymass/vim-matchup')
-call dein#add('jiangmiao/auto-pairs')
-call dein#add('tpope/vim-endwise')
+  call dein#load_toml(s:toml, {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-" Lazy:
-call dein#add('mattn/emmet-vim')
-call dein#config('emmet-vim', { 'lazy': 1, 'on_ft' : 'html' })
+  " Add or remove your plugins here like this:
+  call dein#add('rcarriga/nvim-notify')
+  call dein#add('wsdjeg/dein-ui.vim')
+  call dein#add('mhinz/vim-startify')
+  call dein#add('tyrannicaltoucan/vim-quantum')
+  call dein#add('vim-scripts/L9')
+  call dein#add('lifepillar/vim-solarized8')
+  call dein#add('liuchengxu/vista.vim')
+  call dein#add('liuchengxu/vim-clap')
+  call dein#add('junegunn/fzf.vim')
+  call dein#add('kyazdani42/nvim-web-devicons')
+  call dein#add('kyazdani42/nvim-tree.lua')
+  call dein#add('ryanoasis/vim-devicons')
+  call dein#add('dense-analysis/ale')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('terrortylor/nvim-comment')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('tpope/vim-surround')
+  call dein#add('AndrewRadev/switch.vim')
+  call dein#add('kassio/neoterm')
+  call dein#add('andymass/vim-matchup')
+  call dein#add('jiangmiao/auto-pairs')
+  call dein#add('tpope/vim-endwise')
 
-call dein#add('leafgarland/typescript-vim')
-call dein#config('typesciprt-vim', { 'lazy': 1, 'on_ft' : 'typescript' })
-
-call dein#add('elzr/vim-json')
-call dein#config('typesciprt-vim', { 'lazy': 1, 'on_ft' : ['javascript', 'typescript', 'json'] })
-
-
-" Required:
-call dein#end()
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
 " Load: lua settings
 lua require'settings';
@@ -77,16 +85,6 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
-
-set termguicolors
-
-let mapleader = ","
-set ff=unix
-set synmaxcol=256
-set t_Co=256
-set backspace=2
-set wildmenu
-set pumheight=12
 
 function! RestoreRegister()
   let @" = s:restore_reg
