@@ -8,11 +8,11 @@
 
 `git clone https://github.com/aar0nTw/dotvim.git`
 
-`mv Garberielle.vim ~/.vim`
+`ln -s dotvim ~/.config/nvim`
 
-`ln -s ~/.vim/vimrc ~/.vimrc`
+`ln -s ~/.config/nvim/vimrc ~/.vimrc`
 
-Initialize `pathogen` bundle submodule (DEPRECATED, Will move to `dein.vim`):
+Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
 
 ```sh
 cd ~/.vim
@@ -22,7 +22,7 @@ git submodule init
 git submodule update
 ```
 
-Install dein.vim plugin manager
+Install `dein.vim` plugin manager
 
 `sh ./install.sh ./dein`
 
