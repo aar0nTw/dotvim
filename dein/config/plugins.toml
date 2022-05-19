@@ -1,4 +1,69 @@
 [[plugins]]
+repo = "rcarriga/nvim-notify"
+
+[[plugins]]
+repo = "wsdjeg/dein-ui.vim"
+
+[[plugins]]
+repo = "mhinz/vim-startify"
+
+[[plugins]]
+repo = "tyrannicaltoucan/vim-quantum"
+
+[[plugins]]
+repo = "lifepillar/vim-solarized8"
+
+[[plugins]]
+repo = "liuchengxu/vista.vim"
+
+[[plugins]]
+repo = "liuchengxu/vim-clap"
+
+[[plugins]]
+repo = "junegunn/fzf.vim"
+
+[[plugins]]
+repo = "ryanoasis/vim-devicons"
+
+[[plugins]]
+repo = "kyazdani42/nvim-web-devicons"
+depends = ["vim-devicons"]
+
+[[plugins]]
+repo = "kyazdani42/nvim-tree.lua"
+depends = ["nvim-web-devicons", "vim-devicons"]
+
+[[plugins]]
+repo = "dense-analysis/ale"
+
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+
+[[plugins]]
+repo = "terrortylor/nvim-comment"
+
+[[plugins]]
+repo = "tpope/vim-fugitive"
+
+[[plugins]]
+repo = "tpope/vim-surround"
+
+[[plugins]]
+repo = "AndrewRadev/switch.vim"
+
+[[plugins]]
+repo = "kassio/neoterm"
+
+[[plugins]]
+repo = "andymass/vim-matchup"
+
+[[plugins]]
+repo = "jiangmiao/auto-pairs"
+
+[[plugins]]
+repo = "tpope/vim-endwise"
+
+[[plugins]]
 repo = 'neovim/nvim-lsp'
 hook_add = '''
 lua << EOF
