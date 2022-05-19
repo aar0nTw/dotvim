@@ -68,9 +68,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
-[submodule "bundle/vim-coloresque"]
-	path = bundle/vim-coloresque
-	url = https://github.com/gorodinskiy/vim-coloresque.git
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht

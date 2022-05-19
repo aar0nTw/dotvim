@@ -7,6 +7,9 @@ merged = "v:false"
 repo = "rcarriga/nvim-notify"
 
 [[plugins]]
+repo = "ap/vim-css-color"
+
+[[plugins]]
 repo = "wsdjeg/dein-ui.vim"
 
 [[plugins]]
