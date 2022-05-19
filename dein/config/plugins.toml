@@ -13,7 +13,7 @@ repo = "ap/vim-css-color"
 repo = "wsdjeg/dein-ui.vim"
 
 [[plugins]]
-repo = "mhinz/vim-startify"
+repo = "glepnir/dashboard-nvim"
 
 [[plugins]]
 repo = "tpope/vim-dispatch"
