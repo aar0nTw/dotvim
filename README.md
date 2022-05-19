@@ -6,7 +6,7 @@
 
 ## Usage
 
-`git clone https://github.com/aar0nTw/Garberielle.vim.git`
+`git clone https://github.com/aar0nTw/dotvim.git`
 
 `mv Garberielle.vim ~/.vim`
 
