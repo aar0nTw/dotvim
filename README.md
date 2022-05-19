@@ -8,8 +8,8 @@
 
 ## Usage
 ```sh
-> git clone https://github.com/aar0nTw/dotvim.git
-> ln -s dotvim ~/.config/nvim
+$ git clone https://github.com/aar0nTw/dotvim.git
+$ ln -s dotvim ~/.config/nvim
 ```
 
 Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
