@@ -15,15 +15,15 @@
 Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
 
 ```sh
-> cd ~/.config/nvim
-> git submodule init
-> git submodule update
+$ cd ~/.config/nvim
+$ git submodule init
+$ git submodule update
 ```
 
 Install `dein.vim` plugin manager
 
 ```sh
-> sh ./install.sh ./dein
+$ sh ./install.sh ./dein
 ```
 
 Run following commands in vim:
