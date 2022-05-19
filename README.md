@@ -36,8 +36,8 @@ Run following commands in vim:
 
 ## Todo
 
-[x] dein.vim
-  [ ] Manage all plugins by dein
-  [ ] make all plugins setup in toml
-[ ] remove pathogen
-[ ] remove legacy settings
+- [x] dein.vim
+  - [ ] Manage all plugins by dein
+  - [ ] make all plugins setup in toml
+- [ ] remove pathogen
+- [ ] remove legacy settings
