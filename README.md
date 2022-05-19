@@ -7,12 +7,10 @@
 `brew install universal_ctags rg fzf`
 
 ## Usage
-
-`git clone https://github.com/aar0nTw/dotvim.git`
-
-`ln -s dotvim ~/.config/nvim`
-
-`ln -s ~/.config/nvim/vimrc ~/.vimrc`
+```sh
+> git clone https://github.com/aar0nTw/dotvim.git
+> ln -s dotvim ~/.config/nvim
+```
 
 Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
 
@@ -40,6 +38,6 @@ Run following commands in vim:
 
 - [x] dein.vim
   - [ ] Manage all plugins by dein
-  - [ ] make all plugins setup in toml
+  - [x] make all plugins managed by dein setup in toml
 - [ ] remove pathogen
 - [ ] remove legacy settings
