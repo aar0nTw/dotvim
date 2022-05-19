@@ -1,5 +1,7 @@
 # dotvim
 
+[![Join the chat at https://gitter.im/dotvim/community](https://badges.gitter.im/dotvim/community.svg)](https://gitter.im/dotvim/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Screen Capture on 2022-05-20 at 03-18-12](https://user-images.githubusercontent.com/935988/169385624-ccf81b2a-ae64-4950-bf26-d34d280978d4.gif)
 
 ## Prerequisites
