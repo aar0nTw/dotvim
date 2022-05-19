@@ -1,5 +1,7 @@
 # dotvim
 
+<img width="1492" alt="CleanShot 2022-05-20 at 03 06 20@2x" src="https://user-images.githubusercontent.com/935988/169382588-be3b85c6-f25a-43a9-a293-cc39f0c1157a.png">
+
 ## Prerequisites
 
 `brew install universal_ctags rg fzf`
