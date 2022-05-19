@@ -4,7 +4,14 @@
 
 ## Prerequisites
 
-`brew install universal_ctags rg fzf`
+- nvim
+- python
+- node
+- rust
+- rg
+- fzf
+- lolcat
+- bat
 
 ## Usage
 ```sh
