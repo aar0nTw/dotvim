@@ -1,6 +1,6 @@
 # dotvim
 
-<img width="1492" alt="CleanShot 2022-05-20 at 03 06 20@2x" src="https://user-images.githubusercontent.com/935988/169382588-be3b85c6-f25a-43a9-a293-cc39f0c1157a.png">
+![Screen Capture on 2022-05-20 at 03-18-12](https://user-images.githubusercontent.com/935988/169385624-ccf81b2a-ae64-4950-bf26-d34d280978d4.gif)
 
 ## Prerequisites
 
