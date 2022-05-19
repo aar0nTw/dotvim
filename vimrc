@@ -28,9 +28,9 @@ set rtp+=/opt/homebrew/opt/fzf
 set rtp+=~/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-const s:toml = '~/.config/nvim/./dein/config/plugins.toml'
-const s:lazy_toml = '~/.config/nvim/./dein/config/plugins.lazy.toml'
-let g:dein#auto_recache = v:true
+let s:toml = '~/.config/nvim/./dein/config/plugins.toml'
+let s:lazy_toml = '~/.config/nvim/./dein/config/plugins.lazy.toml'
+let g:dein#auto_recache = v:false
 if dein#load_state('~/.config/nvim/./dein')
   call dein#begin('~/.config/nvim/./dein')
 
