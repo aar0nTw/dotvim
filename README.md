@@ -15,24 +15,30 @@
 Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
 
 ```sh
-cd ~/.vim
-
-git submodule init
-
-git submodule update
+> cd ~/.config/nvim
+> git submodule init
+> git submodule update
 ```
 
 Install `dein.vim` plugin manager
 
-`sh ./install.sh ./dein`
+```sh
+> sh ./install.sh ./dein
+```
 
 Run following commands in vim:
 
-`:call dein#install()`
+```vim
+" dein will install all plugins when nvim first start
+:call dein#install()
+```
 
 ## Optional
 
-`:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json`
+```vim
+" Install lsp for coc
+:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json
+```
 
 ## Todo
 
