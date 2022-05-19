@@ -1,6 +1,4 @@
-# Gabrielle.vim
-
-Garberielle.vim is a complete settings and toolbox for vim of aar0n :D
+# dotvim
 
 ## Prerequisites
 
