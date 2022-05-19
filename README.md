@@ -34,19 +34,10 @@ Run following commands in vim:
 
 `:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json`
 
-### Shortcut
+## Todo
 
-#### leader key is `,`
-
-- `<F9>` : `Paste mode`
-- `<F4>` : `Thumbnail`
-- `<F2>` : `CoffeeLint`
-- `FF` : `Ack`
-- `FG` : `AckFile`
-- `C-l` : `Vista`
-- `C-o` : `Nerdtree`
-- `<Leader>c` : Switch cursor highlight.
-
-### If your git commit was error, please set your git default editor
-
-`git config --global core.editor /usr/bin/vim`
+[x] dein.vim
+  [ ] Manage all plugins by dein
+  [ ] make all plugins setup in toml
+[ ] remove pathogen
+[ ] remove legacy settings
