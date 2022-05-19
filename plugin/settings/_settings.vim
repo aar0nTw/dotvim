@@ -18,7 +18,6 @@ set softtabstop=2
 set ignorecase
 set ruler
 set cursorline
-set cursorcolumn
 set pastetoggle=<F9>
 set hlsearch
 set incsearch

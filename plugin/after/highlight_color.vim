@@ -1,5 +1,4 @@
 " Setting Highlight color
-hi CursorColumn ctermbg=16
 hi CursorLine   ctermbg=16
 hi LineNr       ctermbg=0 ctermfg=229
 hi Normal       ctermbg=none

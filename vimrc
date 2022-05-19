@@ -31,6 +31,7 @@ set rtp+=~/.config/nvim/./dein/repos/github.com/Shougo/dein.vim
 " Dein.vim Setup Required:
 let s:toml = '~/.config/nvim/./dein/config/plugins.toml'
 let s:lazy_toml = '~/.config/nvim/./dein/config/plugins.lazy.toml'
+let s:theme_toml = '~/.config/nvim/./dein/config/themes.toml'
 let g:dein#auto_recache = v:false
 if dein#load_state('~/.config/nvim/./dein')
   call dein#begin('~/.config/nvim/./dein')
@@ -41,6 +42,7 @@ if dein#load_state('~/.config/nvim/./dein')
 
   call dein#load_toml(s:toml, {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
+  call dein#load_toml(s:theme_toml, {'lazy': 0})
 
   " Required:
   call dein#end()
@@ -53,6 +55,7 @@ lua require'settings';
 " Set: colorscheme
 colors rigel
 
+autocmd VimEnter * call dein#call_hook('post_source')
 " Required:
 filetype plugin indent on
 syntax enable

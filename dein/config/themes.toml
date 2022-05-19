@@ -1,0 +1,9 @@
+[[plugins]]
+repo = "4513ECHO/vim-colors-hatsunemiku"
+
+[[plugins]]
+repo = "Rigellute/rigel"
+
+[[plugins]]
+repo = "lifepillar/vim-solarized8"
+

@@ -19,15 +19,6 @@ repo = "mhinz/vim-startify"
 repo = "tyrannicaltoucan/vim-quantum"
 
 [[plugins]]
-repo = "lifepillar/vim-solarized8"
-
-[[plugins]]
-repo = "4513ECHO/vim-colors-hatsunemiku"
-
-[[plugins]]
-repo = "Rigellute/rigel"
-
-[[plugins]]
 repo = "liuchengxu/vista.vim"
 
 [[plugins]]
@@ -70,6 +61,24 @@ repo = "kassio/neoterm"
 
 [[plugins]]
 repo = "andymass/vim-matchup"
+hook_add = '''
+lua <<LUA
+require'nvim-treesitter.configs'.setup {
+  matchup = {
+    enable = true,
+  },
+}
+LUA
+'''
+# Disable match hl in insert mode.
+# Make make match highlight less jarring.
+hook_post_source = '''
+let g:matchup_matchpref = {}
+let g:matchup_matchpref.vue = {'tagnameonly': 1}
+let g:matchup_matchpref.html = {'tagnameonly': 1}
+let g:matchup_matchparen_nomode = 'i'
+hi MatchParen ctermbg=blue guibg=lightblue cterm=italic gui=bold
+'''
 
 [[plugins]]
 repo = "jiangmiao/auto-pairs"
@@ -80,9 +89,21 @@ repo = "tpope/vim-endwise"
 [[plugins]]
 repo = "nvim-treesitter/nvim-treesitter"
 hook_add = '''
-lua << LUA
+lua <<LUA
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { 'json', 'javascript', 'css', 'typescript', 'toml', 'vim', 'html', 'python', 'bash', 'lua', 'markdown' },
+  ensure_installed = {
+    'json',
+    'javascript',
+    'css',
+    'typescript',
+    'toml',
+    'vim',
+    'html',
+    'python',
+    'bash',
+    'lua',
+    'markdown'
+  },
   sync_install = false,
   highlight = {
     enable = true,
@@ -99,7 +120,7 @@ TSUpdate
 [[plugins]]
 repo = 'neovim/nvim-lsp'
 hook_add = '''
-lua << LUA
+lua <<LUA
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }

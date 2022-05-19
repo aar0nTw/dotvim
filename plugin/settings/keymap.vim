@@ -28,7 +28,7 @@ noremap <F2> :CoffeeLint\|cwindow<CR>
 "map <C-A> ggVG
 
 " Switch Highlight
-noremap <Leader>c :set cursorline! cursorcolumn!<CR>
+noremap <Leader>c :set cursorline! <CR>
 
 "SwitchTab
 nnoremap <S-h> gT

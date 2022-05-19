@@ -65,9 +65,6 @@
 [submodule "bundle/vim-buffergator"]
 	path = bundle/vim-buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
 [submodule "bundle/vim-dasht"]
 	path = bundle/vim-dasht
 	url = https://github.com/sunaku/vim-dasht
