@@ -15,6 +15,11 @@ repo = 'fatih/vim-go'
 on_ft = ['go']
 
 [[plugins]]
+repo = 'cespare/vim-toml'
+rev = 'main'
+
+[[plugins]]
+if = 'v:false'
 repo = 'preservim/vim-markdown'
 on_ft = ['md', 'markdown']
 hook_add = '''

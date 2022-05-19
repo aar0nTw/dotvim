@@ -50,7 +50,7 @@ endif
 lua require'settings';
 
 " Set: colorscheme
-colors solarized8
+colors rigel
 
 " Required:
 filetype plugin indent on

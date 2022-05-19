@@ -14,6 +14,12 @@ repo = "tyrannicaltoucan/vim-quantum"
 repo = "lifepillar/vim-solarized8"
 
 [[plugins]]
+repo = "4513ECHO/vim-colors-hatsunemiku"
+
+[[plugins]]
+repo = "Rigellute/rigel"
+
+[[plugins]]
 repo = "liuchengxu/vista.vim"
 
 [[plugins]]
@@ -64,9 +70,28 @@ repo = "jiangmiao/auto-pairs"
 repo = "tpope/vim-endwise"
 
 [[plugins]]
+repo = "nvim-treesitter/nvim-treesitter"
+hook_add = '''
+lua << LUA
+require('nvim-treesitter.configs').setup {
+  ensure_installed = { 'json', 'javascript', 'css', 'typescript', 'toml', 'vim', 'html', 'python', 'bash', 'lua', 'markdown' },
+  sync_install = false,
+  highlight = {
+    enable = true,
+    disable = {"javascript", "typescript"},
+    additional_vim_regex_highlighting = false,
+  },
+}
+LUA
+'''
+hook_done_update = '''
+TSUpdate
+'''
+
+[[plugins]]
 repo = 'neovim/nvim-lsp'
 hook_add = '''
-lua << EOF
+lua << LUA
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -110,5 +135,5 @@ for _, lsp in pairs(servers) do
     }
   }
 end
-EOF
+LUA
 '''
