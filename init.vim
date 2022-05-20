@@ -53,7 +53,7 @@ endif
 lua require'settings';
 
 " Set: colorscheme
-colors rigel
+colorscheme solarized8
 
 autocmd VimEnter * call dein#call_hook('post_source')
 " Required:

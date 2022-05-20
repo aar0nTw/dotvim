@@ -4,7 +4,11 @@ rev = "release"
 merged = "v:false"
 
 [[plugins]]
+repo = "nvim-lua/plenary.nvim"
+
+[[plugins]]
 repo = "rcarriga/nvim-notify"
+depends = ["plenary.nvim"]
 
 [[plugins]]
 repo = "ap/vim-css-color"

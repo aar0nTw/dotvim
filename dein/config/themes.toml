@@ -1,7 +1,4 @@
 [[plugins]]
-repo = "mnishz/colorscheme-preview.vim"
-
-[[plugins]]
 repo = "4513ECHO/vim-colors-hatsunemiku"
 
 [[plugins]]
