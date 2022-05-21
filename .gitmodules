@@ -10,10 +10,6 @@
 	path = bundle/vim-slim
 	url = git://github.com/slim-template/vim-slim.git
   ignore = untracked
-[submodule "bundle/vim-multiedit"]
-	path = bundle/vim-multiedit
-	url = git://github.com/hlissner/vim-multiedit.git
-  ignore = untracked
 [submodule "bundle/localvimrc"]
 	path = bundle/localvimrc
 	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
