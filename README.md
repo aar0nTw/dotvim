@@ -23,14 +23,6 @@ $ git clone https://github.com/aar0nTw/dotvim.git
 $ ln -s dotvim ~/.config/nvim
 ```
 
-Initialize `pathogen` bundle submodule (**DEPRECATED**, Will move to `dein.vim`):
-
-```sh
-$ cd ~/.config/nvim
-$ git submodule init
-$ git submodule update
-```
-
 Install `dein.vim` plugin manager
 
 ```sh
@@ -54,7 +46,7 @@ Run following commands in vim:
 ## Todo
 
 - [x] dein.vim
-  - [ ] Manage all plugins by dein
+  - [x] Manage all plugins by dein
   - [x] make all plugins managed by dein setup in toml
 - [x] remove pathogen
 - [ ] remove legacy settings
