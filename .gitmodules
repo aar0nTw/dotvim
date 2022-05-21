@@ -1,22 +1,7 @@
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
-  ignore = untracked
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
   ignore = untracked
-[submodule "bundle/vim-slim"]
-	path = bundle/vim-slim
-	url = git://github.com/slim-template/vim-slim.git
-  ignore = untracked
-[submodule "bundle/localvimrc"]
-	path = bundle/localvimrc
-	url = https://github.com/MarcWeber/vim-addon-local-vimrc.git
-  ignore = untracked
 [submodule "bundle/vim-literate-coffeescript"]
 	path = bundle/vim-literate-coffeescript
 	url = https://github.com/mintplant/vim-literate-coffeescript.git
-[submodule "bundle/vim-test"]
-	path = bundle/vim-test
-	url = git@github.com:janko-m/vim-test.git

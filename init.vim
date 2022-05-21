@@ -11,8 +11,8 @@ let mapleader = ","
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 "pathogen --------------------------------
-call pathogen#infect()
-call pathogen#helptags()
+" call pathogen#infect()
+" call pathogen#helptags()
 "End pathogen ----------------------------
 
 "dein Scripts-----------------------------

@@ -4,6 +4,12 @@ rev = "release"
 merged = "v:false"
 
 [[plugins]]
+repo = "embear/vim-localvimrc"
+
+[[plugins]]
+repo = "vim-test/vim-test"
+
+[[plugins]]
 repo = "nvim-lua/plenary.nvim"
 
 [[plugins]]
