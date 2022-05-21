@@ -23,6 +23,9 @@ repo = "glepnir/dashboard-nvim"
 repo = "tpope/vim-dispatch"
 
 [[plugins]]
+repo = "sunaku/vim-dasht"
+
+[[plugins]]
 repo = "jgdavey/tslime.vim"
 hook_post_source = '''
 let g:tslime_always_current_session = 1

@@ -6,10 +6,6 @@
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
   ignore = untracked
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
-  ignore = untracked
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
@@ -29,9 +25,6 @@
 [submodule "bundle/vim-literate-coffeescript"]
 	path = bundle/vim-literate-coffeescript
 	url = https://github.com/mintplant/vim-literate-coffeescript.git
-[submodule "bundle/vim-dasht"]
-	path = bundle/vim-dasht
-	url = https://github.com/sunaku/vim-dasht
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = git@github.com:janko-m/vim-test.git
@@ -41,15 +34,3 @@
 [submodule "bundle/vim-styled-components"]
 	path = bundle/vim-styled-components
 	url = git@github.com:styled-components/vim-styled-components.git
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
-[submodule "bundle/vim-jsx-typescript"]
-	path = bundle/vim-jsx-typescript
-	url = https://github.com/peitalin/vim-jsx-typescript.git
-[submodule "bundle/vim-graphql"]
-	path = bundle/vim-graphql
-	url = https://github.com/jparise/vim-graphql.git
