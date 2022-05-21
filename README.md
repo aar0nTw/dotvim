@@ -39,13 +39,6 @@ Run following commands in vim:
 :call dein#install()
 ```
 
-## Optional
-
-```vim
-" Install lsp for coc
-:CocInstall coc-snippets coc-tsserver coc-tabnine coc-angular coc-html coc-pyright coc-list coc-angular coc-json
-```
-
 ## Todo
 
 - [x] dein.vim
