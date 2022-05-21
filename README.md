@@ -38,6 +38,9 @@ Run following commands in vim:
 " dein will install all plugins when nvim first start
 :call dein#install()
 ```
+## Plugins 
+
+see [Plugins](../..//wiki/Plugins)
 
 ## Todo
 
