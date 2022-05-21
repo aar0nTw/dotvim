@@ -16,6 +16,7 @@
 - fzf
 - lolcat
 - bat
+- dasht
 
 ## Usage
 ```sh
@@ -26,6 +27,7 @@ $ ln -s dotvim ~/.config/nvim
 Install `dein.vim` plugin manager
 
 ```sh
+$ cd ~/.config/nvim
 $ sh ./install.sh ./dein
 ```
 
