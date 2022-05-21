@@ -4,7 +4,6 @@ set nobomb
 set title
 set nobackup        " no backup file
 set noswapfile      " no swap file
-
 set list listchars=tab:»·,trail:·
 set number
 set cindent
@@ -21,14 +20,11 @@ set cursorline
 set pastetoggle=<F9>
 set hlsearch
 set incsearch
-
-set background=dark
+" set background=dark
 
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-highlight Comment cterm=bold,italic
-highlight Comment gui=bold,italic
-highlight LineNr guibg=#3e3e3e guifg=#9e9e9e
+highlight Comment cterm=bold,italic gui=bold,italic
 
 " disable splashscreen
 set shortmess+=I

@@ -6,14 +6,12 @@ set synmaxcol=256
 set backspace=2
 set wildmenu
 set pumheight=12
+set autoread
+set clipboard+=unnamed
 
 let mapleader = ","
 let g:python3_host_prog = '/opt/homebrew/bin/python3'
-
-"pathogen --------------------------------
-" call pathogen#infect()
-" call pathogen#helptags()
-"End pathogen ----------------------------
+let g:go_fmt_command = "goimports"
 
 "dein Scripts-----------------------------
 if &compatible
@@ -78,9 +76,3 @@ endfunction
 vmap <silent> <expr> p <sid>Repl()
 
 autocmd CompleteDone * pclose
-
-set clipboard+=unnamed
-
-let g:go_fmt_command = "goimports"
-
-set autoread
