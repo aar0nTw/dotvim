@@ -56,5 +56,5 @@ Run following commands in vim:
 - [x] dein.vim
   - [ ] Manage all plugins by dein
   - [x] make all plugins managed by dein setup in toml
-- [ ] remove pathogen
+- [x] remove pathogen
 - [ ] remove legacy settings

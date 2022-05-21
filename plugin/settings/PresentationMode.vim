@@ -4,7 +4,7 @@
 " font size change only work for GUI-version Vim
 
 function! PresentationModeOn()
-  colorscheme github
+  colorscheme mayansmoke
   if has("gui_macvim")
     set guifont=Monaco:h25           " for Mac
   elseif has("gui_gtk")
@@ -13,17 +13,7 @@ function! PresentationModeOn()
 endfunction
 
 function! PresentationModeOff()
-    set background=dark
-    let g:solarized_termcolors=256
-    let g:solarized_termtrans=1
-    let g:Powerline_symbols = 'fancy'
-    colorscheme solarized
-
-  if has("gui_macvim")
-    set guifont=Monaco:h17           " for Mac
-  elseif has("gui_gtk")
-    set guifont=Monospace\ 14        " for ubuntu
-  end
+    colorscheme nightfly
 endfunction
 
 function! TogglePresentationMode()
