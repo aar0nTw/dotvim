@@ -7,6 +7,12 @@ merged = "v:false"
 repo = "nvim-lua/plenary.nvim"
 
 [[plugins]]
+repo = "nathanaelkane/vim-indent-guides"
+
+[[plugins]]
+repo = "godlygeek/tabular"
+
+[[plugins]]
 repo = "rcarriga/nvim-notify"
 depends = ["plenary.nvim"]
 

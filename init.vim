@@ -1,8 +1,6 @@
 set encoding=utf-8
-
 set t_Co=256
 set termguicolors
-
 set ff=unix
 set synmaxcol=256
 set backspace=2
