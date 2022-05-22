@@ -9,6 +9,12 @@
 
 ## Prerequisites
 
+MacOS / Use brew
+
+```sh
+$ brew bundle install --file ./Brewfile
+```
+
 - nvim
 - python
 - node
