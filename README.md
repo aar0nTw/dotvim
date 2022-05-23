@@ -9,7 +9,7 @@
 
 ## Prerequisites
 
-MacOS / Use brew
+MacOS / Use `brew`
 
 ```sh
 $ brew bundle install --file ./Brewfile
