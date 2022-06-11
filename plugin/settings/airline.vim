@@ -27,4 +27,5 @@ let g:airline#extensions#tabline#left_sep = ''
 " " set left separator which are not editting
 let g:airline#extensions#tabline#left_alt_sep = ''
 " " show buffer number
-let g:airline#extensions#tabline#buffer_nr_show = 1"
+
+let g:airline#extensions#tabline#fnamemod = ':t'

@@ -22,25 +22,11 @@ autocmd! BufRead,BufNewFile *.sass.erb setlocal filetype=sass.eruby
 
 " Ruby
 autocmd! BufRead,BufNewFile *.cap set filetype=ruby
+autocmd! BufRead,BufNewFile *Brewfile set filetype=ruby
 
 " Groovey
 au BufNewFile,BufRead *.groovy  setf groovy
 au BufNewFile,BufRead Jenkinsfile setf groovy
-
-" CoffeeScript
-augroup COFFEESCRIPT
-  autocmd BufRead,BufNewFile *.coffee call tern#Enable()
-  autocmd BufRead,BufNewFile *.coffee set filetype=coffee
-augroup END
-
-augroup CJSX
-  au!
-  autocmd BufNewFile,BufRead *.csx,*.cjsx set filetype=coffee
-  autocmd BufNewFile,BufRead *.csx,*.cjsx call tern#Enable()
-augroup END
-
-"JS
-autocmd! BufRead,BufNewFile *.js call tern#Enable()
 
 " JSON
 autocmd! BufRead,BufNewFile *.json set filetype=json
