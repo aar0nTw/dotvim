@@ -47,6 +47,7 @@ endif
 
 " Load: lua settings
 lua require'settings';
+lua require'dashboard-config';
 
 " Set: colorscheme
 colorscheme nightfly
@@ -76,3 +77,4 @@ endfunction
 vmap <silent> <expr> p <sid>Repl()
 
 autocmd CompleteDone * pclose
+

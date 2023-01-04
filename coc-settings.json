@@ -1,9 +1,6 @@
 {
-  "snippets.textmateSnippetsRoots": [
-    "~/.config/coc/vscode-snippets/angular-snippets"
-  ],
+  "javascript.validate.enable": false,
   "angular.enable-strict-mode-prompt": false,
   "typescript.suggest.autoImports": true,
-  "javascript.suggest.autoImports": true,
-  "javascript.validate.enable": false,
+  "snippets.textmateSnippetsRoots": ["~/.config/coc/vscode-snippets/angular-snippets"]
 }

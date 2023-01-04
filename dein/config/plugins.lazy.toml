@@ -25,3 +25,7 @@ on_ft = ['md', 'markdown']
 hook_add = '''
   let g:vim_markdown_folding_disabled = 1
 '''
+
+[[plugins]]
+repo = 'sotte/presenting.vim'
+on_ft = ['md', 'markdown', 'rst']
