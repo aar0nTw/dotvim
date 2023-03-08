@@ -7,5 +7,7 @@ let g:clap_popup_border='double'
 let g:clap_current_selection_sign = { 'text': '➤', 'texthl': "ClapCurrentSelectionSign", "linehl": "ClapCurrentSelection"}
 let g:clap_preview_size=2
 noremap <C-p> :Clap files<CR>
-noremap FF :Clap grep2<CR>
+noremap FF :Clap live_grep<CR>
 noremap FC :Clap<CR>
+noremap FH :Clap history<CR>
+noremap FB :Clap buffers<CR>

@@ -1,33 +1,61 @@
 local home = os.getenv('HOME');
 local db = require('dashboard');
--- macos
-db.preview_command = 'cat | lolcat -S 125 -a -d 5 -s 35'
-db.preview_file_path = home .. '/.config/nvim/neovim.cat'
-db.preview_file_height = 11
-db.preview_file_width = 70
-db.custom_center = {
-  {icon = '  ',
-  desc = 'Recently latest session                  ',
-  shortcut = 'SPC s l',
-  action ='SessionLoad'},
-  {icon = '  ',
-  desc = 'Recently opened files                   ',
-  action =  'DashboardFindHistory',
-  shortcut = 'SPC f h'},
-  {icon = '  ',
-  desc = 'Find  File                              ',
-  action = 'Telescope find_files find_command=rg,--hidden,--files',
-  shortcut = 'SPC f f'},
-  {icon = '  ',
-  desc ='File Browser                            ',
-  action =  'Telescope file_browser',
-  shortcut = 'SPC f b'},
-  {icon = '  ',
-  desc = 'Find  word                              ',
-  action = 'Telescope live_grep',
-  shortcut = 'SPC f w'},
-  {icon = '  ',
-  desc = 'Open Personal dotfiles                  ',
-  action = 'Telescope dotfiles path=' .. home ..'/.dotfiles',
-  shortcut = 'SPC f d'},
-}
+db.setup({
+  theme = 'hyper',
+  preview = {
+    command = 'cat | lolcat -S 125 -a -d 5 -s 35',
+    file_path = home .. '/.config/nvim/neovim.cat',
+    file_height = 12,
+    file_width = 70,
+  },
+  config = {
+    disable_move = true;
+    week_header = {
+      enable = false
+    },
+    packages = { enable = false },
+    project = {
+      enable = true,
+      limit = 8,
+    },
+    shortcut = {
+      {
+        icon = '  ',
+        desc = 'Recently opened files ',
+        group = 'Label',
+        key= 'h',
+        action = 'Clap history'
+      },
+      {
+        icon = '  ',
+        desc = 'Find File ',
+        group = 'Number',
+        key= 'f',
+        action = 'Clap files'
+      },
+      {
+        icon = '  ',
+        desc = 'File Browser ',
+        key= 'o',
+        group = 'Icon',
+        action = 'NvimTreeFindFile'
+      },
+      {
+        icon = '  ',
+        desc = 'Find word ',
+        group = 'Title',
+        action = 'Clap live_grep',
+        key = 'w',
+      },
+      {
+        icon = '  ',
+        desc = 'Find git history ',
+        key = 'g',
+        group = 'String',
+        action ='Clap commits'
+      },
+    },
+    mru = { limit = 10 },
+    footer = { '@aar0nTw' }  --your footer
+  }
+})
