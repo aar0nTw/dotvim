@@ -4,6 +4,13 @@ rev = "release"
 merged = "v:false"
 
 [[plugins]]
+repo = "github/copilot.vim"
+rev = "release"
+hook_add = '''
+let g:copilot_node_command = "~/.nvm/versions/node/v18.15.0/bin/node"
+'''
+
+[[plugins]]
 repo = "embear/vim-localvimrc"
 
 [[plugins]]
