@@ -15,7 +15,7 @@ MacOS / Use `brew`
 $ brew bundle install --file ./Brewfile
 ```
 
-- nvim
+- nvim v0.10.x
 - python
 - node
 - rust
