@@ -8,8 +8,6 @@ noremap TT :tabe<Space>
 "map <C-o> :NERDTreeToggle<CR>
 "map <Leader><Leader>r :NERDTreeFind<CR>
 
-map <F4> :Thumbnail<CR>
-
 "TagBar
 nnoremap <C-l>  :Vista!!<CR>
 let g:tagbar_autofocus = 1
@@ -22,7 +20,6 @@ imap jj <ESC>
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
-noremap <F2> :CoffeeLint\|cwindow<CR>
 
 " select ALL
 "map <C-A> ggVG
@@ -48,7 +45,6 @@ vmap <C-l> :w !pbcopy<CR><CR>
 " Runner
 autocmd FileType ruby nmap <F5> :rubyf ./%<CR>
 autocmd FileType coffee nmap <F5> :silent !coffee %<CR>
-nmap <F3> :NeoCompleteTagMakeCache<CR>
 
 map $ g_
 

@@ -8,10 +8,148 @@ repo = "github/copilot.vim"
 rev = "release"
 hook_add = '''
 let g:copilot_node_command = "~/.nvm/versions/node/v18.15.0/bin/node"
+let g:copilot_filetypes = {
+  \ '*': v:false,
+  \ 'python': v:true,
+  \ 'javascript': v:true,
+  \ 'typescript': v:true,
+  \ 'typescriptreact': v:true,
+  \ 'javascriptreact': v:true,
+  \ 'go': v:true,
+  \ 'rust': v:true,
+  \ 'c': v:true,
+  \ 'cpp': v:true,
+  \ 'java': v:true,
+  \ 'ruby': v:true,
+  \ 'php': v:true,
+  \ 'lua': v:true,
+  \ 'toml': v:true,
+  \ }
 '''
+[[plugins]]
+repo = "nvim-neotest/nvim-nio"
 
 [[plugins]]
 repo = "embear/vim-localvimrc"
+
+[[plugins]]
+repo = "mortepau/codicons.nvim"
+
+[[plugins]]
+repo = "mfussenegger/nvim-dap"
+hook_add = '''
+lua <<LUA
+vim.keymap.set('n', '<F6>', function() require('dap').step_over() end)
+vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
+vim.keymap.set('n', '<F4>', function() require('dap').step_into() end)
+vim.keymap.set('n', '<F3>', function() require('dap').terminate() end)
+vim.keymap.set('n', '<F2>', function() require('dap').step_out() end)
+vim.keymap.set('n', '<Leader>b', function() require('dap').toggle_breakpoint() end)
+vim.keymap.set('n', '<Leader>B', function() require('dap').set_breakpoint() end)
+vim.keymap.set('n', '<Leader>lb', function() require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: ')) end)
+vim.keymap.set('n', '<Leader>lp', function() require('dap').set_breakpoint(nil, nil, vim.fn.input('Log point message: ')) end)
+vim.keymap.set('n', '<Leader>dr', function() require('dap').repl.open() end)
+vim.keymap.set('n', '<Leader>dl', function() require('dap').run_last() end)
+vim.keymap.set('n', '<Leader>di', function() require('dapui').toggle() end)
+vim.keymap.set({'n', 'v'}, '<Leader>dh', function()
+    require('dap.ui.widgets').hover()
+    end)
+vim.keymap.set({'n', 'v'}, '<Leader>dp', function()
+    require('dap.ui.widgets').preview()
+    end)
+vim.keymap.set('n', '<Leader>df', function()
+    local widgets = require('dap.ui.widgets')
+    widgets.centered_float(widgets.frames)
+    end)
+vim.keymap.set('n', '<Leader>ds', function()
+    local widgets = require('dap.ui.widgets')
+    widgets.centered_float(widgets.scopes)
+    end)
+
+vim.api.nvim_set_hl_ns(10)
+vim.api.nvim_set_hl(10, 'DapBreakpoint', { fg='#993939', bg='#31353f' })
+vim.api.nvim_set_hl(10, 'DapLogPoint', { fg='#61afef', bg='#31353f' })
+vim.api.nvim_set_hl(10, 'DapStopped', { fg='#98c379', bg='#31353f' })
+
+vim.fn.sign_define('DapBreakpoint', { text='', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl='DapBreakpoint' })
+vim.fn.sign_define('DapBreakpointCondition', { text='', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl='DapBreakpoint' })
+vim.fn.sign_define('DapBreakpointRejected', { text='', texthl='DapBreakpoint', linehl='DapBreakpoint', numhl= 'DapBreakpoint' })
+vim.fn.sign_define('DapLogPoint', { text='', texthl='DapLogPoint', linehl='DapLogPoint', numhl= 'DapLogPoint' })
+vim.fn.sign_define('DapStopped', { text='', texthl='DapStopped', linehl='DapStopped', numhl= 'DapStopped' })
+require("dap").adapters["pwa-node"] = {
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    -- 💀 Make sure to update this path to point to your installation
+    args = {"/Users/aaron/Projects/js-debug/src/dapDebugServer.js", "${port}"},
+  }
+}
+
+require("dap").configurations.javascript = {
+  {
+    type = "pwa-node",
+    request = "launch",
+    name = "Launch file",
+    program = "${file}",
+    cwd = "${workspaceFolder}",
+  },
+}
+LUA
+'''
+
+[[plugins]]
+repo = "rcarriga/nvim-dap-ui"
+depends = ["nvim-dap"]
+hook_add = '''
+lua <<LUA
+local dap, dapui = require("dap"), require("dapui")
+dapui.setup({
+  layouts = { {
+      elements = { {
+          id = "stacks",
+          size = 0.25
+        }, {
+          id = "breakpoints",
+          size = 0.10
+        }, {
+          id = "scopes",
+          size = 0.40
+        }, {
+          id = "watches",
+          size = 0.25
+        } },
+      position = "left",
+      size = 40
+    }, {
+      elements = { {
+          id = "console",
+          size = 0.5
+        }, {
+          id = "repl",
+          size = 0.5
+        } },
+      position = "bottom",
+      size = 10
+    }
+  }
+})
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  -- dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  -- dapui.close()
+end
+LUA
+'''
+
+[[plugins]]
+repo = "mxsdev/nvim-dap-vscode-js"
+depends = ["nvim-dap"]
 
 [[plugins]]
 repo = "vim-test/vim-test"
@@ -94,6 +232,9 @@ repo = "AndrewRadev/switch.vim"
 
 [[plugins]]
 repo = "kassio/neoterm"
+
+[[plugins]]
+repo = "hrsh7th/nvim-cmp"
 
 [[plugins]]
 repo = "vim-airline/vim-airline"
@@ -233,7 +374,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'pyright', 'vimls', 'tsserver' }
+local servers = { 'pyright', 'vimls', 'ts_ls' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
